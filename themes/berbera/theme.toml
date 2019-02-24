@@ -1,0 +1,18 @@
+name = "Berbera"
+license = "GPL-3.0"
+description = "A bootstrap 4 Hugo theme for notes."
+tags = ["bootstrap", "blog", "font awesome"]
+features = ["responsive", "blog"]
+min_version = 0.25
+
+[author]
+  name = "Atom Scott"
+  homepage = "https://atomscott.com"
+
+[based on]
+  name = "Alan Orth"
+  homepage = "https://englishbulgaria.net"
+
+[original]
+  author = "mdo"
+  homepage = "https://v4-alpha.getbootstrap.com/examples/blog/"

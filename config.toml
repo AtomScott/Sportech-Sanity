@@ -1,0 +1,12 @@
+baseURL = "https://atomscott.github.io/2019_PRML_site/"
+languageCode = "en-us"
+title = "Atom Scott"
+theme = "berbera"
+
+timeout = 50000
+
+pygmentsCodeFences=true
+pygmentsUseClasses=true
+canonifyURLs=true
+publishDir="docs"
+disableKinds = ["section", "taxonomy", "taxonomyTerm"]

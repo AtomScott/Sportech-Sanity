@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atom Scott</title>
+    <link>https://atomscott.github.io/2019_PRML_site/</link>
+    <description>Recent content on Atom Scott</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 11:53:49 -0700</lastBuildDate>
+    
+	<atom:link href="https://atomscott.github.io/2019_PRML_site/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test article</title>
+      <link>https://atomscott.github.io/2019_PRML_site/soccer/article/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/2019_PRML_site/soccer/article/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+    <item>
+      <title>test page</title>
+      <link>https://atomscott.github.io/2019_PRML_site/soccer/page/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/2019_PRML_site/soccer/page/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+    <item>
+      <title>test technical_note</title>
+      <link>https://atomscott.github.io/2019_PRML_site/soccer/technical_note/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/2019_PRML_site/soccer/technical_note/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+  </channel>
+</rss>
