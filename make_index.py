@@ -29,7 +29,7 @@ for dir2 in dir1:
         <h4 class="card-header">'+dir3+'</h4>\
         <div class="card-body">\
         <ul>\
-        {{ range (where .Pages "File.Dir" "in" "'+file_path+'").Reverse }}/\
+        {{ range (where .Pages "File.Dir" "in" "'+file_path+'").Reverse }}\
         <li>\
         <a href="{{.Permalink}}">{{.Title}}</a>\
         </li>\
