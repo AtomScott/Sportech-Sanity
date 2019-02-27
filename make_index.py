@@ -18,7 +18,18 @@ for dir2 in dir1:
     for dir3 in os.listdir("content/{0}".format(dir2)):
         if dir3 == ".ipynb_checkpoints":
             continue
-        sm_block.add(div())
+        card = div(cls="card")
+        card_header = h4(dir3, cls="card-header")
+        card_body = div(cls="card-body")
+
+        list = ul("hi")
+        for item in range(1):
+            list += li('Item #', item)
+            print(list)
+        card_body.add(list)
+        card.add(card_header)
+        card.add(card_body)
+        sm_block.add(div(cls="cols-sm-12"))
 
     block = div()
     block.add(lg_title)
