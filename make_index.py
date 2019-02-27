@@ -20,7 +20,7 @@ for dir2 in dir1:
     for dir3 in os.listdir("content/{0}".format(dir2)):
         if dir3 == ".ipynb_checkpoints":
             continue
-        file_path = "/{1}/{0}/".format(dir1,dir2)
+        file_path = "/{1}/{0}/".format(dir2,dir3)
         block = '\
         <div class="row">\
         <div class="col-sm-12">\
