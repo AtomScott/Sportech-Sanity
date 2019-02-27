@@ -1,5 +1,3 @@
-import dominate
-from dominate.tags import *
 import codecs
 import os
 
@@ -11,8 +9,13 @@ print(intro.read(), file=codecs.open(file, 'a', 'utf-8'))
 
 dir1 = os.listdir("content/")
 for dir2 in dir1:
-    lg_title = div(cls="row", id=dir2)
-    lg_title.add(div(cls="col-sm-12").add(h3(dir2,cls="category_header")))
+    lg_title = '\
+    <div class="row" id="'+dir2+'">\
+    <div class="col-sm-12">\
+    <h3 class="category_header">'+dir2+'</h3>\
+    </div>\
+    </div>\
+    '
 
     for dir3 in os.listdir("content/{0}".format(dir2)):
         if dir3 == ".ipynb_checkpoints":
@@ -22,7 +25,7 @@ for dir2 in dir1:
         <div class="row">\
         <div class="col-sm-12">\
         <div class="card">\
-        <h4 class="card-header">{0}</h4>\
+        <h4 class="card-header">'+dir3+'</h4>\
         <div class="card-body">\
         <ul>\
         {{ range (where .Pages "File.Dir" "in" "/soccer/").Reverse }}/\
@@ -35,7 +38,7 @@ for dir2 in dir1:
         </div>\
         </div>\
         </div>\
-        '.format(dir3)
+        '
 
     print(lg_title, file=codecs.open(file, 'a', 'utf-8'))
     print(block, file=codecs.open(file, 'a', 'utf-8'))
