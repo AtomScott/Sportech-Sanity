@@ -32,7 +32,7 @@ for dir2 in dir1:
         card_body.add(list)
         card.add(card_header)
         card.add(card_body)
-        sm_block.add(div(cls="cols-sm-12"))
+        sm_block.add(card)
 
     block = div()
     block.add(lg_title)
