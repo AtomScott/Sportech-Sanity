@@ -16,23 +16,37 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="test page" />
-<meta property="og:description" content="A test of page theme" />
+<meta property="og:title" content="test technical_note" />
+<meta property="og:description" content="A test of technical_note theme" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://atomscott.github.io/Sports-Lab/soccer/page/" />
+<meta property="og:url" content="https://atomscott.github.io/Sports-Lab/soccer/2019/technical_note/" />
 <meta property="article:published_time" content="2019-02-20T11:53:49-07:00"/>
 <meta property="article:modified_time" content="2019-02-20T11:53:49-07:00"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="test page"/>
-<meta name="twitter:description" content="A test of page theme"/>
+<meta name="twitter:title" content="test technical_note"/>
+<meta name="twitter:description" content="A test of technical_note theme"/>
 <meta name="generator" content="Hugo 0.54.0" />
 
   
-  
-  
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "test technical_note",
+  "url": "https://atomscott.github.io/Sports-Lab/soccer/2019/technical_note/",
+  "wordCount": "4547",
+  "datePublished": "2019-02-20T11:53:49-07:00",
+  "dateModified": "2019-02-20T11:53:49-07:00",
+  "author": {
+    "@type": "Person",
+    "name": "Atom Scott"
+  },
+  "description": "A test of technical_note theme"
+}
+</script> 
 
-  <title>test page</title>
+  <title>test technical_note</title>
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -109,11 +123,101 @@ MathJax.Hub.Config({
     <div class="row">
       <div class="col-sm-12">
 
-        
+         
+
+
 <article>
-  <div class="page">
-    <div class="content">
-      
+  <div class="technical_note">
+  <header>
+
+    <h1 class="technical_note_title">test technical_note</h1>
+    <div class="technical_note_date">
+      <time datetime=" 2019-02-20T11:53:49-07:00 "> 20 Feb 2019</time>
+    </div>
+  </header>
+  <div class="content">
+    <h2>目次</h2>
+    <div class="toc">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#matplotlib-2d-and-3d-plotting-in-python">matplotlib - 2D and 3D plotting in Python</a>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#matlab-like-api">MATLAB-like API</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#the-matplotlib-object-oriented-api">The matplotlib object-oriented API</a>
+<ul>
+<li><a href="#figure-size-aspect-ratio-and-dpi">Figure size, aspect ratio and DPI</a></li>
+<li><a href="#saving-figures">Saving figures</a>
+<ul>
+<li><a href="#what-formats-are-available-and-which-ones-should-be-used-for-best-quality">What formats are available and which ones should be used for best quality?</a></li>
+</ul></li>
+<li><a href="#legends-labels-and-titles">Legends, labels and titles</a></li>
+<li><a href="#formatting-text-latex-fontsize-font-family">Formatting text: LaTeX, fontsize, font family</a></li>
+<li><a href="#setting-colors-linewidths-linetypes">Setting colors, linewidths, linetypes</a>
+<ul>
+<li><a href="#colors">Colors</a></li>
+<li><a href="#line-and-marker-styles">Line and marker styles</a></li>
+</ul></li>
+<li><a href="#control-over-axis-appearance">Control over axis appearance</a>
+<ul>
+<li><a href="#plot-range">Plot range</a></li>
+<li><a href="#logarithmic-scale">Logarithmic scale</a></li>
+</ul></li>
+<li><a href="#placement-of-ticks-and-custom-tick-labels">Placement of ticks and custom tick labels</a>
+<ul>
+<li><a href="#scientific-notation">Scientific notation</a></li>
+</ul></li>
+<li><a href="#axis-number-and-axis-label-spacing">Axis number and axis label spacing</a>
+<ul>
+<li><a href="#axis-position-adjustments">Axis position adjustments</a></li>
+</ul></li>
+<li><a href="#axis-grid">Axis grid</a></li>
+<li><a href="#axis-spines">Axis spines</a></li>
+<li><a href="#twin-axes">Twin axes</a></li>
+<li><a href="#axes-where-x-and-y-is-zero">Axes where x and y is zero</a></li>
+<li><a href="#other-2d-plot-styles">Other 2D plot styles</a></li>
+<li><a href="#text-annotation">Text annotation</a></li>
+<li><a href="#figures-with-multiple-subplots-and-insets">Figures with multiple subplots and insets</a>
+<ul>
+<li><a href="#subplots">subplots</a></li>
+<li><a href="#subplot2grid">subplot2grid</a></li>
+<li><a href="#gridspec">gridspec</a></li>
+<li><a href="#add-axes">add_axes</a></li>
+</ul></li>
+<li><a href="#colormap-and-contour-figures">Colormap and contour figures</a>
+<ul>
+<li><a href="#pcolor">pcolor</a></li>
+<li><a href="#imshow">imshow</a></li>
+<li><a href="#contour">contour</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#3d-figures">3D figures</a>
+<ul>
+<li>
+<ul>
+<li><a href="#surface-plots">Surface plots</a></li>
+<li><a href="#wire-frame-plot">Wire-frame plot</a></li>
+<li><a href="#coutour-plots-with-projections">Coutour plots with projections</a></li>
+<li><a href="#change-the-view-angle">Change the view angle</a></li>
+</ul></li>
+<li><a href="#animations">Animations</a></li>
+<li><a href="#backends">Backends</a>
+<ul>
+<li><a href="#generating-svg-with-the-svg-backend">Generating SVG with the svg backend</a></li>
+<li><a href="#the-ipython-notebook-inline-backend">The IPython notebook inline backend</a></li>
+<li><a href="#interactive-backend-this-makes-more-sense-in-a-python-script-file">Interactive backend (this makes more sense in a python script file)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#further-reading">Further reading</a></li>
+<li><a href="#versions">Versions</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
 
 <h1 id="matplotlib-2d-and-3d-plotting-in-python">matplotlib - 2D and 3D plotting in Python</h1>
 
@@ -165,14 +269,14 @@ MathJax.Hub.Config({
 <span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
 <span class="n">show</span><span class="p">()</span></code></pre></div>
-<p><img src="page_17_0.png" alt="png" /></p>
+<p><img src="technical_note_17_0.png" alt="png" /></p>
 
 <p>Most of the plotting related functions in MATLAB are covered by the <code>pylab</code> module. For example, subplot and color/symbol selection:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">)</span>
 <span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;g*-&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_19_0.png" alt="png" /></p>
+<p><img src="technical_note_19_0.png" alt="png" /></p>
 
 <p>The good thing about the pylab MATLAB-style API is that it is easy to get started with if you are familiar with MATLAB, and it has a minumum of coding overhead for simple plots.</p>
 
@@ -194,7 +298,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_23_0.png" alt="png" /></p>
+<p><img src="technical_note_23_0.png" alt="png" /></p>
 
 <p>Although a little bit more code is involved, the advantage is that we now have full control of where the plot axes are placed, and we can easily add more than one axis to the figure:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -213,7 +317,7 @@ MathJax.Hub.Config({
 <span class="n">axes2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">axes2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">axes2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;insert title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_25_0.png" alt="png" /></p>
+<p><img src="technical_note_25_0.png" alt="png" /></p>
 
 <p>If we don&rsquo;t care about being explicit about where our plot axes are placed in the figure canvas, then we can use one of the many axis layout managers in matplotlib. My favorite is <code>subplots</code>, which can be used like this:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -222,7 +326,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_27_0.png" alt="png" /></p>
+<p><img src="technical_note_27_0.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="n">axes</span><span class="p">:</span>
@@ -230,7 +334,7 @@ MathJax.Hub.Config({
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span></code></pre></div>
-<p><img src="page_28_0.png" alt="png" /></p>
+<p><img src="technical_note_28_0.png" alt="png" /></p>
 
 <p>That was easy, but it isn&rsquo;t so pretty with overlapping figure axes and labels, right?</p>
 
@@ -244,7 +348,7 @@ MathJax.Hub.Config({
     <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span>
     
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span></code></pre></div>
-<p><img src="page_30_0.png" alt="png" /></p>
+<p><img src="technical_note_30_0.png" alt="png" /></p>
 
 <h3 id="figure-size-aspect-ratio-and-dpi">Figure size, aspect ratio and DPI</h3>
 
@@ -260,7 +364,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">axes</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_35_0.png" alt="png" /></p>
+<p><img src="technical_note_35_0.png" alt="png" /></p>
 
 <h3 id="saving-figures">Saving figures</h3>
 
@@ -316,7 +420,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_56_0.png" alt="png" /></p>
+<p><img src="technical_note_56_0.png" alt="png" /></p>
 
 <h3 id="formatting-text-latex-fontsize-font-family">Formatting text: LaTeX, fontsize, font family</h3>
 
@@ -333,7 +437,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_59_0.png" alt="png" /></p>
+<p><img src="technical_note_59_0.png" alt="png" /></p>
 
 <p>We can also change the global font size and font family, which applies to all text elements in a figure (tick labels, axis labels and titles, legends, etc.):</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Update the matplotlib configuration parameters:</span>
@@ -345,7 +449,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_62_0.png" alt="png" /></p>
+<p><img src="technical_note_62_0.png" alt="png" /></p>
 
 <p>A good choice of global fonts are the STIX fonts:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Update the matplotlib configuration parameters:</span>
@@ -357,7 +461,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_65_0.png" alt="png" /></p>
+<p><img src="technical_note_65_0.png" alt="png" /></p>
 
 <p>Or, alternatively, we can request that matplotlib uses LaTeX to render the text elements in the figure:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;text.usetex&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -368,7 +472,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$y$&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_68_0.png" alt="png" /></p>
+<p><img src="technical_note_68_0.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># restore</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;font.family&#39;</span><span class="p">:</span> <span class="s1">&#39;sans&#39;</span><span class="p">,</span> <span class="s1">&#39;text.usetex&#39;</span><span class="p">:</span> <span class="bp">False</span><span class="p">})</span></code></pre></div>
 <h3 id="setting-colors-linewidths-linetypes">Setting colors, linewidths, linetypes</h3>
@@ -391,7 +495,7 @@ MathJax.Hub.Config({
 <pre><code>[&lt;matplotlib.lines.Line2D at 0x6fbc048&gt;]
 </code></pre>
 
-<p><img src="page_75_1.png" alt="png" /></p>
+<p><img src="technical_note_75_1.png" alt="png" /></p>
 
 <h4 id="line-and-marker-styles">Line and marker styles</h4>
 
@@ -424,7 +528,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="mi">15</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;purple&#34;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">markerfacecolor</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">+</span><span class="mi">16</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;purple&#34;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> 
         <span class="n">markerfacecolor</span><span class="o">=</span><span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="n">markeredgewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">markeredgecolor</span><span class="o">=</span><span class="s2">&#34;blue&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_78_0.png" alt="png" /></p>
+<p><img src="technical_note_78_0.png" alt="png" /></p>
 
 <h3 id="control-over-axis-appearance">Control over axis appearance</h3>
 
@@ -446,7 +550,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;custom axes range&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_83_0.png" alt="png" /></p>
+<p><img src="technical_note_83_0.png" alt="png" /></p>
 
 <h4 id="logarithmic-scale">Logarithmic scale</h4>
 
@@ -459,7 +563,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s2">&#34;log&#34;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;Logarithmic scale (y)&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_86_0.png" alt="png" /></p>
+<p><img src="technical_note_86_0.png" alt="png" /></p>
 
 <h3 id="placement-of-ticks-and-custom-tick-labels">Placement of ticks and custom tick labels</h3>
 
@@ -480,7 +584,7 @@ MathJax.Hub.Config({
  &lt;matplotlib.text.Text at 0x10a3fe750&gt;]
 </code></pre>
 
-<p><img src="page_89_1.png" alt="png" /></p>
+<p><img src="technical_note_89_1.png" alt="png" /></p>
 
 <p>There are a number of more advanced methods for controlling major and minor tick placement in matplotlib figures, such as automatic placement according to different policies. See <a href="http://matplotlib.org/api/ticker_api.html">http://matplotlib.org/api/ticker_api.html</a> for details.</p>
 
@@ -499,7 +603,7 @@ MathJax.Hub.Config({
 <span class="n">formatter</span><span class="o">.</span><span class="n">set_scientific</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span> 
 <span class="n">formatter</span><span class="o">.</span><span class="n">set_powerlimits</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> 
 <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">formatter</span><span class="p">)</span> </code></pre></div>
-<p><img src="page_93_0.png" alt="png" /></p>
+<p><img src="technical_note_93_0.png" alt="png" /></p>
 
 <h3 id="axis-number-and-axis-label-spacing">Axis number and axis label spacing</h3>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># distance between x and y axis and the numbers on the axes</span>
@@ -519,7 +623,7 @@ MathJax.Hub.Config({
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&#34;x&#34;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&#34;y&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_95_0.png" alt="png" /></p>
+<p><img src="technical_note_95_0.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># restore defaults</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;xtick.major.pad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">matplotlib</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;ytick.major.pad&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span></code></pre></div>
@@ -536,7 +640,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&#34;y&#34;</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">left</span><span class="o">=</span><span class="mf">0.15</span><span class="p">,</span> <span class="n">right</span><span class="o">=.</span><span class="mi">9</span><span class="p">,</span> <span class="n">bottom</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="mf">0.9</span><span class="p">);</span></code></pre></div>
-<p><img src="page_99_0.png" alt="png" /></p>
+<p><img src="technical_note_99_0.png" alt="png" /></p>
 
 <h3 id="axis-grid">Axis grid</h3>
 
@@ -550,7 +654,7 @@ MathJax.Hub.Config({
 <span class="c1"># custom grid appearance</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span></code></pre></div>
-<p><img src="page_102_0.png" alt="png" /></p>
+<p><img src="technical_note_102_0.png" alt="png" /></p>
 
 <h3 id="axis-spines">Axis spines</h3>
 
@@ -566,7 +670,7 @@ MathJax.Hub.Config({
 <span class="c1"># turn off axis spine to the right</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&#34;none&#34;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">tick_left</span><span class="p">()</span> <span class="c1"># only ticks on the left side</span></code></pre></div>
-<p><img src="page_105_0.png" alt="png" /></p>
+<p><img src="technical_note_105_0.png" alt="png" /></p>
 
 <h3 id="twin-axes">Twin axes</h3>
 
@@ -583,7 +687,7 @@ MathJax.Hub.Config({
 <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&#34;volume $(m^3)$&#34;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">ax2</span><span class="o">.</span><span class="n">get_yticklabels</span><span class="p">():</span>
     <span class="n">label</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&#34;red&#34;</span><span class="p">)</span></code></pre></div>
-<p><img src="page_108_0.png" alt="png" /></p>
+<p><img src="technical_note_108_0.png" alt="png" /></p>
 
 <h3 id="axes-where-x-and-y-is-zero">Axes where x and y is zero</h3>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -599,7 +703,7 @@ MathJax.Hub.Config({
 
 <span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">xx</span><span class="o">**</span><span class="mi">3</span><span class="p">);</span></code></pre></div>
-<p><img src="page_110_0.png" alt="png" /></p>
+<p><img src="technical_note_110_0.png" alt="png" /></p>
 
 <h3 id="other-2d-plot-styles">Other 2D plot styles</h3>
 
@@ -617,13 +721,13 @@ MathJax.Hub.Config({
 
 <span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;green&#34;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">);</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;fill_between&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_114_0.png" alt="png" /></p>
+<p><img src="technical_note_114_0.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># polar plot using add_axes and polar projection</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_axes</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">.</span><span class="mi">6</span><span class="p">,</span> <span class="o">.</span><span class="mi">6</span><span class="p">],</span> <span class="n">polar</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">);</span></code></pre></div>
-<p><img src="page_115_0.png" alt="png" /></p>
+<p><img src="technical_note_115_0.png" alt="png" /></p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># A histogram</span>
 <span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100000</span><span class="p">)</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
@@ -635,7 +739,7 @@ MathJax.Hub.Config({
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">cumulative</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&#34;Cumulative detailed histogram&#34;</span><span class="p">)</span>
 <span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="n">n</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">n</span><span class="p">)));</span></code></pre></div>
-<p><img src="page_116_0.png" alt="png" /></p>
+<p><img src="technical_note_116_0.png" alt="png" /></p>
 
 <h3 id="text-annotation">Text annotation</h3>
 
@@ -646,7 +750,7 @@ MathJax.Hub.Config({
 
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&#34;$y=x^2$&#34;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;blue&#34;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&#34;$y=x^3$&#34;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&#34;green&#34;</span><span class="p">);</span></code></pre></div>
-<p><img src="page_119_0.png" alt="png" /></p>
+<p><img src="technical_note_119_0.png" alt="png" /></p>
 
 <h3 id="figures-with-multiple-subplots-and-insets">Figures with multiple subplots and insets</h3>
 
@@ -655,7 +759,7 @@ MathJax.Hub.Config({
 <h4 id="subplots">subplots</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span></code></pre></div>
-<p><img src="page_123_0.png" alt="png" /></p>
+<p><img src="technical_note_123_0.png" alt="png" /></p>
 
 <h4 id="subplot2grid">subplot2grid</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -665,7 +769,7 @@ MathJax.Hub.Config({
 <span class="n">ax4</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
 <span class="n">ax5</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span></code></pre></div>
-<p><img src="page_125_0.png" alt="png" /></p>
+<p><img src="technical_note_125_0.png" alt="png" /></p>
 
 <h4 id="gridspec">gridspec</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">matplotlib.gridspec</span> <span class="kn">as</span> <span class="nn">gridspec</span></code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -675,7 +779,7 @@ MathJax.Hub.Config({
     <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
     
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span></code></pre></div>
-<p><img src="page_128_0.png" alt="png" /></p>
+<p><img src="technical_note_128_0.png" alt="png" /></p>
 
 <h4 id="add-axes">add_axes</h4>
 
@@ -698,7 +802,7 @@ MathJax.Hub.Config({
 <span class="c1"># set axis tick locations</span>
 <span class="n">inset_ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.005</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">])</span>
 <span class="n">inset_ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">.</span><span class="mi">1</span><span class="p">]);</span></code></pre></div>
-<p><img src="page_131_0.png" alt="png" /></p>
+<p><img src="technical_note_131_0.png" alt="png" /></p>
 
 <h3 id="colormap-and-contour-figures">Colormap and contour figures</h3>
 
@@ -716,7 +820,7 @@ MathJax.Hub.Config({
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">pcolor</span><span class="p">(</span><span class="n">X</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">),</span> <span class="n">Y</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">),</span> <span class="n">Z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">RdBu</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span><span class="o">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">vmax</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span><span class="o">.</span><span class="nb">max</span><span class="p">())</span>
 <span class="n">cb</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span></code></pre></div>
-<p><img src="page_137_0.png" alt="png" /></p>
+<p><img src="technical_note_137_0.png" alt="png" /></p>
 
 <h4 id="imshow">imshow</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
@@ -725,13 +829,13 @@ MathJax.Hub.Config({
 <span class="n">im</span><span class="o">.</span><span class="n">set_interpolation</span><span class="p">(</span><span class="s1">&#39;bilinear&#39;</span><span class="p">)</span>
 
 <span class="n">cb</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">)</span></code></pre></div>
-<p><img src="page_139_0.png" alt="png" /></p>
+<p><img src="technical_note_139_0.png" alt="png" /></p>
 
 <h4 id="contour">contour</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
 
 <span class="n">cnt</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">RdBu</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span><span class="o">.</span><span class="nb">min</span><span class="p">(),</span> <span class="n">vmax</span><span class="o">=</span><span class="nb">abs</span><span class="p">(</span><span class="n">Z</span><span class="p">)</span><span class="o">.</span><span class="nb">max</span><span class="p">(),</span> <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span></code></pre></div>
-<p><img src="page_141_0.png" alt="png" /></p>
+<p><img src="technical_note_141_0.png" alt="png" /></p>
 
 <h2 id="3d-figures">3D figures</h2>
 
@@ -749,7 +853,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
 <span class="n">p</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">antialiased</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">cb</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">shrink</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span></code></pre></div>
-<p><img src="page_146_0.png" alt="png" /></p>
+<p><img src="technical_note_146_0.png" alt="png" /></p>
 
 <h4 id="wire-frame-plot">Wire-frame plot</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -757,7 +861,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot_wireframe</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">rstride</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">cstride</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></code></pre></div>
-<p><img src="page_148_0.png" alt="png" /></p>
+<p><img src="technical_note_148_0.png" alt="png" /></p>
 
 <h4 id="coutour-plots-with-projections">Coutour plots with projections</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -772,7 +876,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim3d</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">);</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim3d</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">);</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_zlim3d</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">);</span></code></pre></div>
-<p><img src="page_150_0.png" alt="png" /></p>
+<p><img src="technical_note_150_0.png" alt="png" /></p>
 
 <h4 id="change-the-view-angle">Change the view angle</h4>
 
@@ -788,7 +892,7 @@ MathJax.Hub.Config({
 <span class="n">ax</span><span class="o">.</span><span class="n">view_init</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span></code></pre></div>
-<p><img src="page_153_0.png" alt="png" /></p>
+<p><img src="technical_note_153_0.png" alt="png" /></p>
 
 <h3 id="animations">Animations</h3>
 
@@ -2813,7 +2917,7 @@ bwAAABpkYXRhAAAAAQAAAABMYXZmNTYuMS4w
 <span class="c1"># Show the produced SVG file. </span>
 <span class="c1">#</span>
 <span class="n">SVG</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s2">&#34;test.svg&#34;</span><span class="p">)</span></code></pre></div>
-<p><img src="page_169_0.svg" alt="svg" /></p>
+<p><img src="technical_note_169_0.svg" alt="svg" /></p>
 
 <h4 id="the-ipython-notebook-inline-backend">The IPython notebook inline backend</h4>
 
@@ -2859,7 +2963,7 @@ import matplotlib.pyplot as plt
 <span class="n">t</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">numpy</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&#34;test.svg&#34;</span><span class="p">)</span></code></pre></div>
-<p><img src="page_174_0.svg" alt="svg" /></p>
+<p><img src="technical_note_174_0.svg" alt="svg" /></p>
 
 <h4 id="interactive-backend-this-makes-more-sense-in-a-python-script-file">Interactive backend (this makes more sense in a python script file)</h4>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1">#</span>
@@ -2891,9 +2995,18 @@ import matplotlib.pyplot as plt
 <span class="o">%</span><span class="n">version_information</span> <span class="n">numpy</span><span class="p">,</span> <span class="n">scipy</span><span class="p">,</span> <span class="n">matplotlib</span></code></pre></div>
 <table><tr><th>Software</th><th>Version</th></tr><tr><td>Python</td><td>2.7.10 64bit [GCC 4.2.1 (Apple Inc. build 5577)]</td></tr><tr><td>IPython</td><td>3.2.1</td></tr><tr><td>OS</td><td>Darwin 14.1.0 x86_64 i386 64bit</td></tr><tr><td>numpy</td><td>1.9.2</td></tr><tr><td>scipy</td><td>0.16.0</td></tr><tr><td>matplotlib</td><td>1.4.3</td></tr><tr><td colspan='2'>Sat Aug 15 11:30:23 2015 JST</td></tr></table>
 
+</div>
+  <aside>
+      <div class="bug_reporting">
+          <h4>エラー、もしくはバグが見つかったら連絡をください！</h4>
+          <p><a href='https://twitter.com/chrisalbon'>Twitter</a>で一番活動しているので、DMを送って頂ければ対応できるかと思います。 </p>
+      </div>
+      </aside>
+
     </div>
-  </div>
 </article>
+
+
 
 
       </div>
