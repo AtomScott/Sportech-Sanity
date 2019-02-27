@@ -1,4 +1,5 @@
 rm -r docs
+python make_index.py
 jupyter nbconvert --to notebook --execute make.ipynb
 hugo
 git add .
