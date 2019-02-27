@@ -20,7 +20,7 @@ for dir2 in dir1:
     for dir3 in os.listdir("content/{0}".format(dir2)):
         if dir3 == ".ipynb_checkpoints":
             continue
-
+        file = "/{1}/{0}/".format(dir1,dir2)
         block = '\
         <div class="row">\
         <div class="col-sm-12">\
@@ -28,7 +28,7 @@ for dir2 in dir1:
         <h4 class="card-header">'+dir3+'</h4>\
         <div class="card-body">\
         <ul>\
-        {{ range (where .Pages "File.Dir" "in" "'+dir2+'/'+dir3+'/").Reverse }}/\
+        {{ range (where .Pages "File.Dir" "in" "'+file+'").Reverse }}/\
         <li>\
         <a href="{{.Permalink}}">{{.Title}}</a>\
         </li>\
