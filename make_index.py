@@ -22,10 +22,13 @@ for dir2 in dir1:
         card_header = h4(dir3, cls="card-header")
         card_body = div(cls="card-body")
 
-        list = ul("hi")
-        for item in range(1):
-            list += li('Item #', item)
-            print(list)
+        list = ul('\
+        {{ range (where .Pages "File.Dir" "in" "/soccer/").Reverse }}/\
+        <li>\
+        <a href="{{.Permalink}}">{{.Title}}</a>\
+        </li>\
+        {{ end }}\
+        ')
         card_body.add(list)
         card.add(card_header)
         card.add(card_body)
