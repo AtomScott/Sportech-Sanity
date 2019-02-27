@@ -16,6 +16,7 @@ for dir2 in dir1:
     </div>\
     </div>\
     '
+    print(lg_title, file=codecs.open(file, 'a', 'utf-8'))
 
     for dir3 in os.listdir("content/{0}".format(dir2)):
         if dir3 == ".ipynb_checkpoints":
@@ -40,7 +41,6 @@ for dir2 in dir1:
         </div>\
         '
 
-    print(lg_title, file=codecs.open(file, 'a', 'utf-8'))
-    print(block, file=codecs.open(file, 'a', 'utf-8'))
+        print(block, file=codecs.open(file, 'a', 'utf-8'))
 
 print('</div> \n</main> \n {{ end }}', file=codecs.open(file, 'a', 'utf-8'))
