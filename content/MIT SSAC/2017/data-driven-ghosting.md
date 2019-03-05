@@ -40,4 +40,6 @@ Current state-of-the-art sports metrics such as “Wins-above-Replacement” in 
 *問題点や議論できることがあれば*
 
 ## その他
-**関係論文**
+**リサーチクエスチョンに関する論文**
+
+**手法に関する論文**
