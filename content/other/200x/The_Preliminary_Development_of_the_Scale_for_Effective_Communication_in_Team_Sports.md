@@ -9,7 +9,7 @@ info:
   sport_icon: "heart"
   url: "https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1559-1816.2003.tb01970.x"
 authors:
-- Atom Scott  
+- Ikuma Uchida  
 date: 2019-03-06T00:00:00+09:00
 description: "Summary"
 type: technical_note
