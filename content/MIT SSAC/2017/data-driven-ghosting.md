@@ -4,7 +4,7 @@ author: "Hoang M. Le, Peter Carr, Yisong Yue, Patrick Lucey"
 publisher: "MIT SSAC"
 date: 2017-02-20T11:53:49-07:00
 description: "Summary"
-type: technical-note
+type: technical_note
 draft: false
 ---
 
