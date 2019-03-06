@@ -376,7 +376,7 @@ Technical Notes
   margin-bottom: 0.5em;
 }
 
-.content .technical_note h2 {
+.technical_note .content  h2 {
   padding-bottom: 0.5em;
   border-bottom: 2.5px solid rgba(47, 53, 64, 0.5);
 }
