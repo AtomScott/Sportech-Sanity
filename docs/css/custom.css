@@ -606,3 +606,32 @@ TableOfContents
 .toc a{
   color: whitesmoke;
   }
+
+  /* ---------------------------------------------------------
+  Author Box
+  ---------------------------------------------------------*/
+
+  .author-box-intro {
+    margin-top: 15px;
+  }
+  a.author-social-link.small {
+    margin-left: 5px;
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .center-block {
+      margin: 0 auto;
+    }
+    .author-box {
+      text-align: center;
+    }
+    .author-social-links {
+      text-align: center;
+      display: block;
+      margin-top: 10.5px;
+  /*  position: absolute;
+      right: 20px;
+      top: -20px;
+  */
+    }
+  }

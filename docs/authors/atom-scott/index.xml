@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atom Scott</title>
+    <link>https://atomscott.github.io/Sports-Lab/authors/atom-scott/</link>
+    <description>Recent content on Atom Scott</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2017 11:53:49 -0700</lastBuildDate>
+    
+	<atom:link href="https://atomscott.github.io/Sports-Lab/authors/atom-scott/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data-Driven Ghosting using Deep Imitation Learning</title>
+      <link>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</link>
+      <pubDate>Mon, 20 Feb 2017 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</guid>
+      <description>url : http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf
+要旨 Abstract 論文のアブストラクトを日本語で
+Current state-of-the-art sports metrics such as “Wins-above-Replacement” in baseball, “Expected Point Value” in basketball, and “Expected Goal Value” in soccer and hockey are now commonplace in performance analysis. These measures have enhanced our ability to compare and value performance in sport. But they are inherently limited because they are tied to a discrete outcome of a specific event. With the widespread (and growing) availability of player and ball tracking data comes the potential to quantitatively analyze and compare fine-grain movement patterns.</description>
+    </item>
+    
+  </channel>
+</rss>

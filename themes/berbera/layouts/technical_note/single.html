@@ -59,14 +59,18 @@
       <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " }}">{{ .Date.Format $dateFormat }}</time>
     </div>
   </header>
+
   {{- range .Params.authors }}
   {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-    <figure>
-      <img src="{{ .Params.photo }}" alt=""/>
-      <figcaption>
-        <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-      </figcaption>
-    </figure>
+  <p>作成者 : <a href="{{ .Permalink }}"><span class="author-name text-primary">{{ .Params.name }}</span>
+    <small class="author-social-links small">
+      <a href="https://twitter.com/{{ .Params.twitter }}" class="author-social-link twitter small" target="_blank">
+        <i class="fa fa-2x fa-twitter"></i>
+      </a>
+     </small><!-- author-social-links -->
+     </a>
+     </p>
+
   {{ end }}
 {{ end }}
 
@@ -77,10 +81,38 @@
     </div>
   {{ .Content }}
 </div>
+
+{{- range .Params.authors }}
+{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+  <hr class="visible-xs-block">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0">
+      <img class="img-responsive rounded center-block" src="{{ .Params.photo }}">
+    </div><!-- col-sm-3 -->
+
+    <div class="col-xs-12 col-sm-9">
+      <div class="author-box-intro text-muted">About the Author</div>
+        <!-- .author-box-intro --><div class="author-inline-block">
+        <h4 class="author-box-title">
+         <a href="{{ .Permalink }}"><span class="author-name text-dark">{{ .Params.name }}</span></a>
+        </h4>
+        <a href="https://twitter.com/{{ .Params.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ .Params.twitter }}
+        </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="author-box-content">{{ .Params.bio }}
+        </div><!-- author-box-content -->
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- panel -->
+
+
+{{ end }}
+{{ end }}
+
   <aside>
       <div class="bug_reporting">
           <h4>エラー、もしくはバグが見つかったら連絡をください！</h4>
-          <p><a href='https://twitter.com/chrisalbon'>Twitter</a>で一番活動しているので、DMを送って頂ければ対応できるかと思います。 </p>
+          <p><a href='https://twitter.com/AtomJamesScott'>Twitter</a>で一番活動しているので、DMを送って頂ければ対応できるかと思います。 </p>
       </div>
       </aside>
 
