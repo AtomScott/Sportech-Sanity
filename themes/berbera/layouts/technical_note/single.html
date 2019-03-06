@@ -83,12 +83,12 @@
   <li><a href={{.Params.info.url}}>{{.Params.info.url}}</a></li>
 </ul>
 <hr>
+<h2>目次</h2>
+<div class="toc">
+{{ .TableOfContents }}
+</div>
 
   <div class="content">
-    <h2>目次</h2>
-    <div class="toc">
-    {{ .TableOfContents }}
-    </div>
   {{ .Content }}
 </div>
 
