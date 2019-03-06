@@ -10,5 +10,3 @@ pygmentsUseClasses=true
 canonifyURLs=true
 publishDir="docs"
 disableKinds = ["section", "taxonomy", "taxonomyTerm"]
-[taxonomies]
-  author = "authors"

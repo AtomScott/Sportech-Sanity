@@ -59,16 +59,6 @@
       <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " }}">{{ .Date.Format $dateFormat }}</time>
     </div>
   </header>
-  {{- range .Params.authors }}
-  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-    <figure>
-      <img src="{{ .Params.photo }}" alt=""/>
-      <figcaption>
-        <a href="{{ .Permalink }}">{{ .Params.name }}</a>
-      </figcaption>
-    </figure>
-  {{ end }}
-{{ end }}
   <div class="content">
     <h2>目次</h2>
     <div class="toc">
