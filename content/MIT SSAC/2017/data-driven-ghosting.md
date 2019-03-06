@@ -1,6 +1,7 @@
 ---
 title: "Data-Driven Ghosting using Deep Imitation Learning"
 publisher: "MIT SSAC"
+authors: Atom Scott
 date: 2017-02-20T11:53:49-07:00
 description: "Summary"
 type: technical_note
