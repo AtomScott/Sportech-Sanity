@@ -357,6 +357,10 @@ Technical Notes
   font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+.technical_note p{
+  font-size: 0.9em;
+}
+
 .technical_note .technical_note_date {
   margin-bottom: 1em;
 }
