@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66582-32"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66582-32');
+    </script>
+
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:title" content="Data-Driven Ghosting using Deep Imitation Learning" />
+<meta property="og:description" content="Summary" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/" />
+<meta property="article:published_time" content="2017-02-20T11:53:49-07:00"/>
+<meta property="article:modified_time" content="2017-02-20T11:53:49-07:00"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data-Driven Ghosting using Deep Imitation Learning"/>
+<meta name="twitter:description" content="Summary"/>
+<meta name="generator" content="Hugo 0.54.0" />
+
+  
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Data-Driven Ghosting using Deep Imitation Learning",
+  "url": "https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/",
+  "wordCount": "275",
+  "datePublished": "2017-02-20T11:53:49-07:00",
+  "dateModified": "2017-02-20T11:53:49-07:00",
+  "author": {
+    "@type": "Person",
+    "name": "Hoang M. Le, Peter Carr, Yisong Yue, Patrick Lucey"
+  },
+  "description": "Summary"
+}
+</script> 
+
+  <title>Data-Driven Ghosting using Deep Imitation Learning</title>
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Noto+Sans+JP|Sawarabi+Gothic|Sawarabi+Mincho" rel="stylesheet">
+
+  <link href="https://atomscott.github.io/Sports-Lab/css/custom.css" rel="stylesheet">
+  <link href="https://atomscott.github.io/Sports-Lab/css/syntax.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
+
+  <link href="" rel="alternate" type="application/rss+xml" title="Atom Scott" />
+
+  <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://atomscott.github.io/Sports-Lab/">Sports Labo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              編集者
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="http://projects.atomscott.com/jp/">スコットアトム</a>
+              <a class="dropdown-item" href="">山室冴</a>
+              <a class="dropdown-item" href="">白戸豪太</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+
+         
+
+
+<article>
+  <div class="technical_note">
+  <header>
+
+    <h1 class="technical_note_title">Data-Driven Ghosting using Deep Imitation Learning</h1>
+    <div class="technical_note_date">
+      <time datetime=" 2017-02-20T11:53:49-07:00 "> 20 Feb 2017</time>
+    </div>
+  </header>
+  <div class="content">
+    <h2>目次</h2>
+    <div class="toc">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#要旨-abstract">要旨 Abstract</a></li>
+<li><a href="#リサーチ課題">リサーチ課題</a></li>
+<li><a href="#リサーチ課題に対する結論">リサーチ課題に対する結論</a></li>
+<li><a href="#手法">手法</a></li>
+<li><a href="#検証方法-methods">検証方法 Methods</a></li>
+<li><a href="#コメント-comment">コメント Comment</a></li>
+<li><a href="#その他">その他</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  
+
+<p><strong>url : <a href="http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf">http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf</a></strong></p>
+
+<h2 id="要旨-abstract">要旨 Abstract</h2>
+
+<p><em>論文のアブストラクトを日本語で</em></p>
+
+<p>Current state-of-the-art sports metrics such as “Wins-above-Replacement” in baseball, “Expected Point Value” in basketball, and “Expected Goal Value” in soccer and hockey are now commonplace in performance analysis. These measures have enhanced our ability to compare and value performance in sport.  But they are inherently limited because they are tied to a discrete outcome of a specific event. With the widespread (and growing) availability of player and ball tracking data comes the potential to quantitatively analyze and compare fine-grain movement patterns. An excellent example of this was the “ghosting” system developed by the Toronto Raptors to analyze player decision-making in STATS SportVU tracking data. Specifically, the Raptors created software to predict what a defensive player should have done instead of what they actually did. Motivated by the original “ghosting” work, we showcase an automatic “data-driven ghosting” method using advanced machine learning methodologies called “deep imitation learning”, applied to a season’s worth of tracking data from a recent professional league in soccer. Our ghosting method, which avoids substantial manual human annotation, results in a data-driven system that allows us to answer the question “how should this player or team have played in a given game situation compare to the league average?”. In addition, by “fine-tuning” our league average model to the tracking data from a particular team, our ghosting technique can estimate how each team might have approached the situation. Our method enables counterfactual analysis of effectiveness of defensive positioning as both a measurable and viewable quantity for the first time.</p>
+
+<h2 id="リサーチ課題">リサーチ課題</h2>
+
+<p>**
+きめ細かく守備をスケーラブルに定量化し，分析するにはどうすればよいか？</p>
+
+<h2 id="リサーチ課題に対する結論">リサーチ課題に対する結論</h2>
+
+<p>データ駆動ゴーストを使用して，選手が取った守備と理想的な守備との差を求める。</p>
+
+<h2 id="手法">手法</h2>
+
+<p><em>まずは一言で</em></p>
+
+<p>模倣学習（アルファゴー）とゴースティング（トロントラプターズ）</p>
+
+<p><strong>手法の具体的な説明</strong></p>
+
+<p><strong>従来のアプローチとはどのように異なるか</strong></p>
+
+<h2 id="検証方法-methods">検証方法 Methods</h2>
+
+<p>ゴーストの動きがゴール確率を低下させる特定の状況を示した。</p>
+
+<h2 id="コメント-comment">コメント Comment</h2>
+
+<p><em>問題点や議論できることがあれば</em></p>
+
+<h2 id="その他">その他</h2>
+
+<p><strong>リサーチクエスチョンに関する論文</strong></p>
+
+<p><strong>手法に関する論文</strong></p>
+
+</div>
+  <aside>
+      <div class="bug_reporting">
+          <h4>エラー、もしくはバグが見つかったら連絡をください！</h4>
+          <p><a href='https://twitter.com/chrisalbon'>Twitter</a>で一番活動しているので、DMを送って頂ければ対応できるかと思います。 </p>
+      </div>
+      </aside>
+
+    </div>
+</article>
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+  
+
+  <footer class="footer text-center">
+    <div class="container">
+
+      <span class="text-muted">Copyright &copy; Atom Scott, <time datetime="2018">2018</time>.</span>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
