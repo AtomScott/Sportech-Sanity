@@ -586,8 +586,12 @@ div.math {
 /* ---------------------------------------------------------
 TableOfContents
 ---------------------------------------------------------*/
+.toc{
+  border-radius: 25em;
+  background: rgba(47, 53, 64, 1.0);
+}
+
 .toc nav{
-    background-color: rgba(47, 53, 64, 1.0);
     color: white;
     padding: 15px 0px 15px 0px;
 }

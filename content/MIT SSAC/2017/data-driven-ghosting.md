@@ -1,6 +1,11 @@
 ---
 title: "Data-Driven Ghosting using Deep Imitation Learning"
-publisher: "MIT SSAC"
+info:
+  title: "Data-Driven	Ghosting	using	Deep	Imitation	Learning"
+  authors: "Hoang	M.	Le,	Peter	Carr,	Yisong	Yue,	and	Patrick	Lucey"
+  labs: "California	Institute	of	Technology,	Disney	Research,	and	STATS	LLC"
+  conference: "MIT Sloan Sports Analytics Conference"
+  url: "http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf"
 authors:
 - Atom Scott
 date: 2017-02-20T11:53:49-07:00
@@ -9,17 +14,22 @@ type: technical_note
 draft: false
 ---
 
-**url : http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf**
-
-
 ## 要旨 Abstract
-*論文のアブストラクトを日本語で*
+*論文のアブストラクトを日本語で軽く*
 
-Current state-of-the-art sports metrics such as “Wins-above-Replacement” in baseball, “Expected Point Value” in basketball, and “Expected Goal Value” in soccer and hockey are now commonplace in performance analysis. These measures have enhanced our ability to compare and value performance in sport.  But they are inherently limited because they are tied to a discrete outcome of a specific event. With the widespread (and growing) availability of player and ball tracking data comes the potential to quantitatively analyze and compare fine-grain movement patterns. An excellent example of this was the “ghosting” system developed by the Toronto Raptors to analyze player decision-making in STATS SportVU tracking data. Specifically, the Raptors created software to predict what a defensive player should have done instead of what they actually did. Motivated by the original “ghosting” work, we showcase an automatic “data-driven ghosting” method using advanced machine learning methodologies called “deep imitation learning”, applied to a season’s worth of tracking data from a recent professional league in soccer. Our ghosting method, which avoids substantial manual human annotation, results in a data-driven system that allows us to answer the question “how should this player or team have played in a given game situation compare to the league average?”. In addition, by “fine-tuning” our league average model to the tracking data from a particular team, our ghosting technique can estimate how each team might have approached the situation. Our method enables counterfactual analysis of effectiveness of defensive positioning as both a measurable and viewable quantity for the first time.
+ゴール期待値などといった現在のSoTAである測定値は、パフォーマンス分析において頻繁に使われるようになった。しかし、シュートという離散的なイベントに紐付けられているため、本質的な制約がある。
+
+選手・ボールのトラッキングデータを用いることで、細かな行動パターンを定量的に分析することができるのではないか。
+
+本研究では、ゴースティングと深層模倣学習を用いてサッカーの1シーズン分のトラッキングデータに適応した、自動データ駆動ゴースティングという手法を提案する。
+
+このゴースティング手法を活用することで、「ある選手・チームはある試合状況において、どのように動くべきなのか」という問いに答えることができる。さらに異なるチームがある状況に対してどうアプローチしたかも予想することができる。
 
 ## リサーチ課題
 **
 きめ細かく守備をスケーラブルに定量化し，分析するにはどうすればよいか？
+
+ある選手・チームはある試合状況において、どのように動くべきなのか？
 
 ## リサーチ課題に対する結論
 データ駆動ゴーストを使用して，選手が取った守備と理想的な守備との差を求める。
@@ -27,7 +37,7 @@ Current state-of-the-art sports metrics such as “Wins-above-Replacement” in 
 ## 手法
 *まずは一言で*
 
-模倣学習（アルファゴー）とゴースティング（トロントラプターズ）
+深層模倣学習（アルファゴー）とゴースティング（トロントラプターズ）
 
 **手法の具体的な説明**
 
