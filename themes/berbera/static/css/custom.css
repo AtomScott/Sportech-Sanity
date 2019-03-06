@@ -354,7 +354,7 @@ Homepage cards
 Technical Notes
 ---------------------------------------------------------*/
 .technical_note, .page {
-  font-family: 'Sawarabi Mincho', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .technical_note .technical_note_date {
@@ -378,7 +378,7 @@ Technical Notes
 
 .technical_note .content  h2 {
   padding-bottom: 0.5em;
-  border-bottom: 2.5px solid rgba(47, 53, 64, 0.5);
+  border-bottom: 2.5px solid rgba(47, 53, 64, 1.0);
 }
 
 .technical_note h3 {
