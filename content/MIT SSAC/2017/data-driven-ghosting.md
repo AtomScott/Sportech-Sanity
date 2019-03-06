@@ -1,7 +1,6 @@
 ---
 title: "Data-Driven Ghosting using Deep Imitation Learning"
 author: "Hoang M. Le, Peter Carr, Yisong Yue, Patrick Lucey"
-url: "http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf"
 publisher: "MIT SSAC"
 date: 2017-02-20T11:53:49-07:00
 description: "Summary"

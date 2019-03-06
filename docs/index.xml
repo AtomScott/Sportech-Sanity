@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Atom Scott</title>
+    <link>https://atomscott.github.io/Sports-Lab/</link>
+    <description>Recent content on Atom Scott</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 11:53:49 -0700</lastBuildDate>
+    
+	<atom:link href="https://atomscott.github.io/Sports-Lab/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test article</title>
+      <link>https://atomscott.github.io/Sports-Lab/soccer/2019/article/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/soccer/2019/article/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+    <item>
+      <title>test page</title>
+      <link>https://atomscott.github.io/Sports-Lab/soccer/2019/page/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/soccer/2019/page/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+    <item>
+      <title>test technical_note</title>
+      <link>https://atomscott.github.io/Sports-Lab/soccer/2019/technical_note/</link>
+      <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/soccer/2019/technical_note/</guid>
+      <description>matplotlib - 2D and 3D plotting in Python J.R. Johansson (jrjohansson at gmail.com)
+The latest version of this IPython notebook lecture is available at http://github.com/jrjohansson/scientific-python-lectures.
+The other notebooks in this lecture series are indexed at http://jrjohansson.github.io.
+# This line configures matplotlib to show figures embedded in the notebook,  # instead of opening a new window for each figure. More about that later.  # If you are using an old version of IPython, try using &amp;#39;%pylab inline&amp;#39; instead.</description>
+    </item>
+    
+    <item>
+      <title>Data-Driven Ghosting using Deep Imitation Learning</title>
+      <link>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</link>
+      <pubDate>Mon, 20 Feb 2017 11:53:49 -0700</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</guid>
+      <description>url : http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf
+要旨 Abstract 論文のアブストラクトを日本語で
+Current state-of-the-art sports metrics such as “Wins-above-Replacement” in baseball, “Expected Point Value” in basketball, and “Expected Goal Value” in soccer and hockey are now commonplace in performance analysis. These measures have enhanced our ability to compare and value performance in sport. But they are inherently limited because they are tied to a discrete outcome of a specific event. With the widespread (and growing) availability of player and ball tracking data comes the potential to quantitatively analyze and compare fine-grain movement patterns.</description>
+    </item>
+    
+  </channel>
+</rss>
