@@ -214,7 +214,7 @@ Navbar
 }
 
 .navbar .navbar-brand, .navbar .navbar-brand:hover {
-  font-family:Sawarabi gothic;
+  font-family: Sawarabi gothic;
   color: whitesmoke;
   letter-spacing: 1px;
   font-weight: 700;
@@ -223,7 +223,7 @@ Navbar
 }
 
 .navbar-nav>li>a {
-  font-family:Sawarabi gothic;
+  font-family: Sawarabi gothic;
   color: whitesmoke;
   text-transform: uppercase;
   font-size: .8em;
@@ -373,7 +373,8 @@ Technical Notes
   font-size: 1.3em;
   font-weight: bold;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgba(47, 53, 64, 1.0);
 }
 
 .technical_note h3 {
@@ -392,10 +393,6 @@ Technical Notes
   font-size: 1em;
   font-weight: bold;
   margin-top: 1em;
-}
-
-.technical_note .content h2{
-  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 /* ---------------------------------------------------------
@@ -590,56 +587,57 @@ div.math {
 /* ---------------------------------------------------------
 TableOfContents
 ---------------------------------------------------------*/
-.toc{
+.toc {
   border-radius: 0.25em;
   background: rgba(47, 53, 64, 1.0);
 }
 
-.toc nav{
-    color: white;
-    padding: 15px 0px 15px 0px;
+.toc nav {
+  color: white;
+  padding: 15px 0px 15px 0px;
 }
 
-.toc nav > ul{
-  color:#fff;
+.toc nav>ul {
+  color: #fff;
   padding-left: 0.5em;
 }
 
-.toc nav > ul > li > ul{
-  color:whitesmoke;
+.toc nav>ul>li>ul {
+  color: whitesmoke;
 }
 
-
-
-.toc a{
+.toc a {
   color: whitesmoke;
-  }
+}
 
-  /* ---------------------------------------------------------
+/* ---------------------------------------------------------
   Author Box
   ---------------------------------------------------------*/
+.author-box-intro {
+  margin-top: 15px;
+}
 
-  .author-box-intro {
-    margin-top: 15px;
+a.author-social-link.small {
+  margin-left: 5px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .center-block {
+    margin: 0 auto;
   }
-  a.author-social-link.small {
-    margin-left: 5px;
+
+  .author-box {
+    text-align: center;
   }
-  /* Small Devices, Tablets */
-  @media only screen and (max-width: 768px) {
-    .center-block {
-      margin: 0 auto;
-    }
-    .author-box {
-      text-align: center;
-    }
-    .author-social-links {
-      text-align: center;
-      display: block;
-      margin-top: 10.5px;
-  /*  position: absolute;
+
+  .author-social-links {
+    text-align: center;
+    display: block;
+    margin-top: 10.5px;
+    /*  position: absolute;
       right: 20px;
       top: -20px;
   */
-    }
   }
+}
