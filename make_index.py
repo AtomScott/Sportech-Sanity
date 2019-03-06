@@ -38,7 +38,7 @@ for dir2 in dir1:
         <ul>\
         {{ range (where .Pages "File.Dir" "in" "'+file_path+'").Reverse }}\
         <li>\
-        <a href="{{.Permalink}}">{{.Title}}<i class="fas fa-{{.Params.info.sport_icon}}"></i> </a>\
+        <a href="{{.Permalink}}">{{.Title}} <i class="fas fa-{{.Params.info.sport_icon}}"></i> </a>\
         </li>\
         {{ end }}\
         </ul> \
