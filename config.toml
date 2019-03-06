@@ -1,6 +1,6 @@
 baseURL = "https://atomscott.github.io/Sports-Lab/"
 languageCode = "en-us"
-title = "Atom Scott"
+title = "Sportech Sanity"
 theme = "berbera"
 
 timeout = 50000
