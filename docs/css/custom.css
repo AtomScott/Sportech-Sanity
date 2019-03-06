@@ -587,7 +587,7 @@ div.math {
 TableOfContents
 ---------------------------------------------------------*/
 .toc{
-  border-radius: 25em;
+  border-radius: 0.25em;
   background: rgba(47, 53, 64, 1.0);
 }
 
