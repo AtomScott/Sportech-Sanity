@@ -154,7 +154,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
   color: #505050;
-  font-family: 'Kosugi Maru', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .footer {
@@ -353,7 +353,7 @@ Homepage cards
 /* ---------------------------------------------------------
 Technical Notes
 ---------------------------------------------------------*/
-.technica_note, .page {
+.technical_note, .page {
   font-family: 'Sawarabi Mincho', sans-serif;
 }
 
@@ -392,6 +392,10 @@ Technical Notes
   font-size: 1em;
   font-weight: bold;
   margin-top: 1em;
+}
+
+.technical_note .content h2{
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 /* ---------------------------------------------------------
