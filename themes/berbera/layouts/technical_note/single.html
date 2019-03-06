@@ -91,17 +91,15 @@
   <div class="content">
   {{ .Content }}
 </div>
+<hr class="visible-xs-block">
 
 {{- range .Params.authors }}
 {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-  <hr class="visible-xs-block">
   <div class="row">
-    <div class="col-3">
+    <div class="col-4">
       <img class="img-responsive rounded center-block" src="{{ .Params.photo }}">
     </div><!-- col-sm-3 -->
-
-    <div class="col-9">
-      <div class="author-box-intro text-muted">About the Author</div>
+    <div class="col-8">
         <!-- .author-box-intro --><div class="author-inline-block">
         <h4 class="author-box-title">
          <a href="{{ .Permalink }}"><span class="author-name text-dark">{{ .Params.name }}</span></a>
