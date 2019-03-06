@@ -5,6 +5,8 @@ info:
   authors: "Hoang	M.	Le,	Peter	Carr,	Yisong	Yue,	and	Patrick	Lucey"
   labs: "California	Institute	of	Technology,	Disney	Research,	and	STATS	LLC"
   conference: "MIT Sloan Sports Analytics Conference"
+  sport: "Soccer"
+  sport_icon: "futbol"
   url: "http://www.sloansportsconference.com/wp-content/uploads/2017/02/1671-2.pdf"
 authors:
 - Atom Scott
@@ -37,9 +39,13 @@ draft: false
 ## 手法
 **まずは一言で**
 
-深層模倣学習（アルファゴー）とゴースティング（トロントラプターズ）
+深層模倣学習とゴースティング
 
 **手法の具体的な説明**
+
+- 深層模倣学習
+
+- ゴースティング
 
 **従来のアプローチとはどのように異なるか**
 

@@ -1,13 +1,20 @@
 import codecs
 import os
 
+def get_icon(md):
+    return
+
 path = "themes/berbera/layouts/"
 file = "themes/berbera/layouts/index.html"
 print('{{ define "main" }} \n <main>\n<div class="homepage">', file=codecs.open(file, 'w', 'utf-8'))
 intro = open("{0}index_intro.html".format(path), 'r')
 print(intro.read(), file=codecs.open(file, 'a', 'utf-8'))
 
+# dir1はコンテンツフォルダ！
+# dir2は学会名！
+# dir3は年！
 dir1 = os.listdir("content/")
+dir1.remove("authors")
 for dir2 in dir1:
     lg_title = '\
     <div class="row" id="'+dir2+'">\
@@ -31,7 +38,7 @@ for dir2 in dir1:
         <ul>\
         {{ range (where .Pages "File.Dir" "in" "'+file_path+'").Reverse }}\
         <li>\
-        <a href="{{.Permalink}}">{{.Title}}</a>\
+        <a href="{{.Permalink}}">{{.Title}}<i class="fas fa-{{.Params.info.sport_icon}}"></i> </a>\
         </li>\
         {{ end }}\
         </ul> \

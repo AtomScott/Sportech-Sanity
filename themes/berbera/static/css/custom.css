@@ -53,6 +53,8 @@ font-family: 'Sawarabi Gothic', sans-serif;
   font-style: normal
 }
 
+@import "fa.css";
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
