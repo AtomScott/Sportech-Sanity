@@ -1,6 +1,6 @@
 ---
 name: Ikuma Uchida
-photo: "https://media.gettyimages.com/photos/actor-george-clooney-attends-the-men-who-stare-at-goats-premiere-at-picture-id90437124"
+photo: "https://pbs.twimg.com/profile_images/1059818008674209794/OKdHl42E_400x400.jpg"
 twitter: "ikusimilar"
 bio: ""
 ---
