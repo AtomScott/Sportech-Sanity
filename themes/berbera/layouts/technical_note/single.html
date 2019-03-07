@@ -58,7 +58,7 @@
     <div class="technical_note_date">
       <time datetime="{{ .Date.Format " 2006-01-02T15:04:05Z07:00 " }}">{{ .Date.Format $dateFormat }}</time>
     </div>
-    <img class="img-responsive" src="{{ .File.TranslationBaseName }}/feature.jpg}}"/>
+    <img class="img-responsive" src="../{{ .File.TranslationBaseName }}/feature.jpg"/>
   </header>
 
   {{- range .Params.authors }}
