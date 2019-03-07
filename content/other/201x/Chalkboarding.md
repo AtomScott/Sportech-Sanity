@@ -1,5 +1,6 @@
 ---
 title: "Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval"
+photo: "feature.jpg"
 info:
   title: "Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval"
   authors: "Long Sha, Patrick Lucey, Yisong Yue, Peter Carr, Charlie Rohlf, Iain Matthews"
