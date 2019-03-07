@@ -62,13 +62,12 @@
 
   {{- range .Params.authors }}
   {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
-  <p>作成者 : <a href="{{ .Permalink }}"><span class="author-name text-primary">{{ .Params.name }}</span>
+  <p>作成者 : <a href="{{ .Permalink }}"><span class="author-name text-primary">{{ .Params.name }}</span>     </a>
     <small class="author-social-links small">
       <a href="https://twitter.com/{{ .Params.twitter }}" class="author-social-link twitter small" target="_blank">
         <i class="fa fa-2x fa-twitter"></i>
       </a>
      </small><!-- author-social-links -->
-     </a>
      </p>
 
   {{ end }}
