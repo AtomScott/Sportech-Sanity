@@ -1,19 +1,21 @@
+{{ define "title" }}{{ .Title | markdownify }}{{ end }} {{ define "schema-dot-org" }}
+{{ end }} {{ define "main" }} {{ $dateFormat := default " 02 Jan 2006" (index .Site.Params "date_format") }}
+
 <h1>{{ .Params.name }}</h1>
-<img src="{{ .Params.photo }}" alt=""/>
+<img class="rounded-circle" src="{{ .Params.photo }}" alt="" />
 
-<h2>Bio</h2>
-{{ .Content }}
-{{ with .Params.twitter }}
-  <p>
-    <a href="https://twitter.com/{{ substr . 1 }}">
-      Follow {{ $.Params.name }} on Twitter
-    </a>
-  </p>
-{{ end }}
+<h2>自己紹介</h2>
+<p>{{ .Params.bio }}</p>
+<a href="https://twitter.com/{{ .Params.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ .Params.twitter }}
+</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>note: <a href="{{ .Params.note }}">{{ .Params.note }}</a></p>
+<p>website: <a href="{{ .Params.website }}">{{ .Params.website }}</a></p>
 
-<h2>Articles</h2>
+<h2>論文紹介</h2>
 <ul>
-{{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{ end }}
+  {{ range .Data.Pages }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
 </ul>
+{{ end }}

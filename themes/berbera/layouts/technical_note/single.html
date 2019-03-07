@@ -73,6 +73,18 @@
 
   {{ end }}
 {{ end }}
+<div>
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet"
+  data-size="large"
+  data-text="【論文紹介】&#010;{{ .Title }}&#010;&#010;"
+  data-hashtags="SportechSanity"
+  data-url="{{ .Permalink }}"
+  data-related="AtomJamesScott">
+
+Tweetする</a>
+</div>
+
 <hr>
 <h2>論文情報</h2>
 <ul>
@@ -92,6 +104,19 @@
   <div class="content">
   {{ .Content }}
 </div>
+
+<div>
+<a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet"
+  data-size="large"
+  data-text="【論文紹介】&#010;{{ .Title }}&#010;&#010;"
+  data-hashtags="SportechSanity"
+  data-url="{{ .Permalink }}"
+  data-related="AtomJamesScott">
+
+Tweetする</a>
+</div>
+
 <hr class="visible-xs-block">
 
 {{- range .Params.authors }}
