@@ -61,7 +61,10 @@ MSMを
 
 - **Gait energy image**
 
-Gait Energy Image(GEI) は，1 つの歩行シーケンスを集約することで得られる特徴量である.
+$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
+
+Gait Energy Image(GEI) は，1 つの歩行シーケンスを集約することで得られる特徴量である。
+シーケンスを平均化して集約することで，各フレームに含まれるノイズを抑制している。
 ![GEI](GEI.png)
 
 ## 結果
