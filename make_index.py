@@ -19,7 +19,7 @@ for dir2 in dir1:
     lg_title = '\
     <div class="row" id="'+dir2+'">\
     <div class="col-sm-12">\
-    <h3 class="category_header">'+dir2+'</h3>\
+    <h3 class="category_header">'+dir2.upper()+'</h3>\
     </div>\
     </div>\
     '
