@@ -8,7 +8,7 @@ info:
   conference: "21st International Conference on Intelligent User Interfaces"
   sport: "basketball"
   sport_icon: "basketball-ball"
-  url: "https://arxiv.org/pdf/1602.06994.pdf"
+  url: "http://www.yisongyue.com/publications/iui2016_chalkboarding.pdf"
 authors:
 - Saeru Yamamuro
 - Atom Scott
@@ -34,8 +34,7 @@ Apple風にまとめるなら、**"試合中の気になったシーンを入力
 ## 手法
 **まずは一言で**
 
-プレイ検索データベースの構築と
-
+プレイ検索データベースの構築と類似度（l2距離）によるランキング
 
 **手法の具体的な説明**
 
