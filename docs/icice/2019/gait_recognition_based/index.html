@@ -19,7 +19,7 @@
 <meta property="og:title" content="Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features" />
 <meta property="og:description" content="Summary" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based_on_constraint_mutual_subspace_method_with_cnn_features/" />
+<meta property="og:url" content="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/" />
 <meta property="article:published_time" content="2019-01-01T00:00:00&#43;09:00"/>
 <meta property="article:modified_time" content="2019-01-01T00:00:00&#43;09:00"/>
 
@@ -34,8 +34,8 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features",
-  "url": "https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based_on_constraint_mutual_subspace_method_with_cnn_features/",
-  "wordCount": "48",
+  "url": "https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/",
+  "wordCount": "51",
   "datePublished": "2019-01-01T00:00:00&#43;09:00",
   "dateModified": "2019-01-01T00:00:00&#43;09:00",
   "author": {
@@ -128,7 +128,7 @@ MathJax.Hub.Config({
     <div class="technical_note_date">
       <time datetime=" 2019-01-01T00:00:00&#43;09:00 "> 01 Jan 2019</time>
     </div>
-    <img class="img-responsive" src=""/>
+    <img class="img-responsive" src="feature.png"/>
   </header>
   <p>作成者 : <a href="https://atomscott.github.io/Sports-Lab/authors/atom-scott/"><span class="author-name text-primary">Atom Scott</span>     </a>
       <a href="https://twitter.com/AtomJamesScott" class="author-social-link twitter small" target="_blank">
@@ -144,7 +144,7 @@ MathJax.Hub.Config({
   data-size="large"
   data-text="【論文紹介】&#010;Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features&#010;&#010;"
   data-hashtags="SportechSanity"
-  data-url="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based_on_constraint_mutual_subspace_method_with_cnn_features/"
+  data-url="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/"
   data-related="AtomJamesScott">
 
 Tweetする</a>
@@ -217,16 +217,10 @@ Tweetする</a>
 
 <p><strong>まずは一言で</strong></p>
 
-<p>MSMを</p>
+<p>畳み込みニューラルネットワーク（CNN）によるを用いた制約部分空間法（CMSM）</p>
 
-<ol>
-<li>一般化差分部分空間（GDS）への射影によるクラス部分空間の準直交化</li>
-<li>畳み込みニューラルネットワーク（CNN)を用いた各入力画像からの特徴抽出</li>
-</ol>
-
-<p>で強化した手法</p>
-
-<p><strong>手法の具体的な説明</strong></p>
+<p><strong>手法の具体的な説明</strong>
+<img src="cmsm.png" alt="" /></p>
 
 <p><strong>従来のアプローチとはどのように異なるか</strong></p>
 
@@ -234,19 +228,31 @@ Tweetする</a>
 <li><strong>Gait energy image</strong></li>
 </ul>
 
-<p>$\text{S}<em>1(N) = \sum</em>{p=1}^N \text{E}(p)$</p>
-
 <p>Gait Energy Image(GEI) は，1 つの歩行シーケンスを集約することで得られる特徴量である。
-シーケンスを平均化して集約することで，各フレームに含まれるノイズを抑制している。
+シーケンスを平均化して集約することで，各フレームに含まれるノイズを抑制している。</p>
+
+<p>しかし，このようなシーケンスの集約は，フレーム間の変化の方向及び大きさまでは捉えられない．つまり，GEI はシーケンスの構造を圧縮しすぎるために，高精度な識別のために重要な構造情報までを損失してしまっている。
 <img src="GEI.png" alt="GEI" /></p>
+
+<ul>
+<li>相互部分空間（MSM）</li>
+</ul>
+
+<p>MSMは画像セットに基づく識別手法であり、歩行シルエットシーケンス全体の構造を部分空間によってコンパクトに表現する。
+比較は、部分空間同士の類似度（正準角）を計算することで求まる。
+<img src="msm.png" alt="msm" /></p>
 
 <h2 id="結果">結果</h2>
 
-<p>ゴーストの動きがゴール確率を低下させる特定の状況を示した。</p>
+<p>OU-ISIR Large Population Databaseを用いた1000人規模の評価実験において、98.%の精度を示した。
+<img src="results.png" alt="" /></p>
 
 <h2 id="コメント">コメント</h2>
 
 <p><em>問題点や議論できることがあれば</em></p>
+
+<p>スポーツの画像認識タスクにおいて、選手間の識別というものが一つの問題となっている。
+そのため、本文のように大規模人数の歩容認識手法は大きく役立つことが期待される。</p>
 
 <h2 id="その他">その他</h2>
 
@@ -262,7 +268,7 @@ Tweetする</a>
   data-size="large"
   data-text="【論文紹介】&#010;Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features&#010;&#010;"
   data-hashtags="SportechSanity"
-  data-url="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based_on_constraint_mutual_subspace_method_with_cnn_features/"
+  data-url="https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/"
   data-related="AtomJamesScott">
 
 Tweetする</a>

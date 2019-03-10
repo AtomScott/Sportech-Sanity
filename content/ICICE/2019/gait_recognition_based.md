@@ -1,5 +1,6 @@
 ---
 title: "Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features"
+photo: feature.png
 info:
   title: "Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features"
   authors: "Akinari Sakai, Naoya Sogi, Kazuhiro Fukui "
@@ -15,7 +16,6 @@ description: "Summary"
 type: technical_note
 draft: false
 ---
-
 ## 要旨 Abstract
 *論文のアブストラクトを日本語で軽く*
 
@@ -47,31 +47,36 @@ GDSへの射影を導入した手法は、制約相互部分空間法（CMSM）�
 ## 手法
 **まずは一言で**
 
-MSMを
-
-1. 一般化差分部分空間（GDS）への射影によるクラス部分空間の準直交化
-2. 畳み込みニューラルネットワーク（CNN)を用いた各入力画像からの特徴抽出
-
-で強化した手法
+畳み込みニューラルネットワーク（CNN）によるを用いた制約部分空間法（CMSM）
 
 **手法の具体的な説明**
-
+![](cmsm.png)
 
 **従来のアプローチとはどのように異なるか**
 
 - **Gait energy image**
 
-$\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
-
 Gait Energy Image(GEI) は，1 つの歩行シーケンスを集約することで得られる特徴量である。
 シーケンスを平均化して集約することで，各フレームに含まれるノイズを抑制している。
+
+しかし，このようなシーケンスの集約は，フレーム間の変化の方向及び大きさまでは捉えられない．つまり，GEI はシーケンスの構造を圧縮しすぎるために，高精度な識別のために重要な構造情報までを損失してしまっている。
 ![GEI](GEI.png)
 
+- 相互部分空間（MSM）
+
+MSMは画像セットに基づく識別手法であり、歩行シルエットシーケンス全体の構造を部分空間によってコンパクトに表現する。
+比較は、部分空間同士の類似度（正準角）を計算することで求まる。
+![msm](msm.png)
+
 ## 結果
-ゴーストの動きがゴール確率を低下させる特定の状況を示した。
+OU-ISIR Large Population Databaseを用いた1000人規模の評価実験において、98.%の精度を示した。
+![](results.png)
 
 ## コメント
 *問題点や議論できることがあれば*
+
+スポーツの画像認識タスクにおいて、選手間の識別というものが一つの問題となっている。
+そのため、本文のように大規模人数の歩容認識手法は大きく役立つことが期待される。
 
 ## その他
 **リサーチクエスチョンに関する論文**
