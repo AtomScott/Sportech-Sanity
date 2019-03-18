@@ -13,9 +13,36 @@
 <p>website: <a href="{{ .Params.website }}">{{ .Params.website }}</a></p>
 
 <h2>紹介した論文</h2>
-<ul>
-  {{ range .Data.Pages }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-  {{ end }}
-</ul>
+<!-- Ranges through content/* and info!=nil.md -->
+{{ range where .Site.Pages ".Params.info" "!=" nil}}
+<div class='row'>
+  <div class='col-2'>
+    <p><a href="{{.Permalink}}"><img class="preview" src="{{.Permalink}}{{.Params.photo}}"></img></a></p>
+
+  </div>
+  <div class='col-10'>
+    <p><a href="{{.Permalink}}">{{.Title}}</a><br><span class="date">{{- range .Params.authors }}{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+        {{ .Params.name }}{{end}}
+        {{end}}|{{.Date.Format "2006-01-02"}}</span>
+    </p>
+
+  </div>
+</div>
+{{ end }}
+<style>
+  .list p {
+    font-size: 0.8em;
+  }
+
+  .date {
+    color: #636363;
+    font-size: 0.7em;
+  }
+
+
+  .preview {
+    object-fit: cover;
+    margin-bottom: .5em;
+  }
+</style>
 {{ end }}
