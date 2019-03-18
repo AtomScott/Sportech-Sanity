@@ -5,7 +5,7 @@
       <h2>論文紹介一覧</h2>
       <ul>
         <!-- Ranges through content/posts/*.md -->
-        {{ range (where .Pages "File.Dir" "in" "{{ .Site.BaseURL }}").Reverse }}
+        {{ range .Site.Pages }}
         <li> <a href="{{.Permalink}}">{{.Title}} <i class="fas fa-{{.Params.info.sport_icon}}"></i> </a> </li> {{ end }}
       </ul>
     </div>
