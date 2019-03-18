@@ -56,7 +56,7 @@ Similar	Possessions Finderによって、
 
 ## コメント
 *問題点や議論できることがあれば*
-{{< youtube DNWWi8RYzhM> }}
+{{< youtube DNWWi8RYzhM >}}
 軌道画像をそのまま使うのは計算リソース的に厳しかったために、Autoencoderによる次元圧縮を行ったそうなのだが、トラッキングデータを画像にする必要はあるのか。
 （検証したい気持ちがある）
 
