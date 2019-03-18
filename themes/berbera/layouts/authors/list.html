@@ -14,7 +14,7 @@
 
 <h2>紹介した論文</h2>
 <!-- Ranges through content/* and info!=nil.md -->
-{{ range where .Site.Pages ".Params.info" "!=" nil}}
+{{ range where .Site.Pages ".Params.name" "in" "Params.authors"}}
 <div class='row'>
   <div class='col-2'>
     <p><a href="{{.Permalink}}"><img class="preview" src="{{.Permalink}}{{.Params.photo}}"></img></a></p>
@@ -46,4 +46,3 @@
   }
 </style>
 {{ end }}
-  
