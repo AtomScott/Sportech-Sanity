@@ -1,0 +1,14 @@
+{{ define "title" }}{{ .Title | markdownify }}{{ end }} {{ define "main" }}
+<article>
+  <div class="page">
+    <div class="content">
+      <h2>論文紹介一覧</h2>
+      <ul>
+        <!-- Ranges through content/posts/*.md -->
+        {{ range (where .Pages "File.Dir" "in" "{{ .Site.BaseURL }}").Reverse }}
+        <li> <a href="{{.Permalink}}">{{.Title}} <i class="fas fa-{{.Params.info.sport_icon}}"></i> </a> </li> {{ end }}
+      </ul>
+    </div>
+  </div>
+</article>
+{{ end }}
