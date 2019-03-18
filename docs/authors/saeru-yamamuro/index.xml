@@ -38,10 +38,10 @@
     
     <item>
       <title>Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval</title>
-      <link>https://atomscott.github.io/Sports-Lab/other/201x/chalkboarding/</link>
+      <link>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</link>
       <pubDate>Mon, 20 Feb 2017 11:53:49 -0700</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/other/201x/chalkboarding/</guid>
+      <guid>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</guid>
       <description>要旨 Abstract 急増するスポーツのトラッキングデータによって、１プレーのデータを効率よく処理することに注目が集まってきている。タグ付けされたデータを素早く検索するシステムはあるが、タグ付けされていないプレーを検索するシステムは未だない。 本文ではChalkboardingと呼ぶ、検索システムを提案する。
 Apple風にまとめるなら、&amp;ldquo;試合中の気になったシーンを入力すれば、過去の試合から類似したプレイを検索することができます。Chalkboardingならタグなしのトラッキングデータのみでね。&amp;rdquo;
 リサーチ課題 スポーツにおけるワンプレーのような、マルチエージェントの時空間軌跡に対するクエリを表現する最良の方法はなにか

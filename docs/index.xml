@@ -43,10 +43,10 @@
     
     <item>
       <title>The Preliminary Development of the Scale for Effective Communication in Team Sports</title>
-      <link>https://atomscott.github.io/Sports-Lab/other/200x/the_preliminary_development_of_the_scale_for_effective_communication_in_team_sports/</link>
+      <link>https://atomscott.github.io/Sports-Lab/more/200x/the_preliminary_development_of_the_scale_for_effective_communication_in_team_sports/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/other/200x/the_preliminary_development_of_the_scale_for_effective_communication_in_team_sports/</guid>
+      <guid>https://atomscott.github.io/Sports-Lab/more/200x/the_preliminary_development_of_the_scale_for_effective_communication_in_team_sports/</guid>
       <description>要旨 Abstract 論文のアブストラクトを日本語で軽く</description>
     </item>
     
@@ -111,10 +111,10 @@
     
     <item>
       <title>Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval</title>
-      <link>https://atomscott.github.io/Sports-Lab/other/201x/chalkboarding/</link>
+      <link>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</link>
       <pubDate>Mon, 20 Feb 2017 11:53:49 -0700</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/other/201x/chalkboarding/</guid>
+      <guid>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</guid>
       <description>要旨 Abstract 急増するスポーツのトラッキングデータによって、１プレーのデータを効率よく処理することに注目が集まってきている。タグ付けされたデータを素早く検索するシステムはあるが、タグ付けされていないプレーを検索するシステムは未だない。 本文ではChalkboardingと呼ぶ、検索システムを提案する。
 Apple風にまとめるなら、&amp;ldquo;試合中の気になったシーンを入力すれば、過去の試合から類似したプレイを検索することができます。Chalkboardingならタグなしのトラッキングデータのみでね。&amp;rdquo;
 リサーチ課題 スポーツにおけるワンプレーのような、マルチエージェントの時空間軌跡に対するクエリを表現する最良の方法はなにか
@@ -161,6 +161,15 @@ Apple風にまとめるなら、&amp;ldquo;試合中の気になったシーン�
 コメント 問題点や議論できることがあれば
 その他 リサーチクエスチョンに関する論文
 手法に関する論文</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://atomscott.github.io/Sports-Lab/other/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://atomscott.github.io/Sports-Lab/other/list/</guid>
+      <description>hi!</description>
     </item>
     
   </channel>

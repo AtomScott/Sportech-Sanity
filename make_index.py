@@ -15,6 +15,7 @@ print(intro.read(), file=codecs.open(file, 'a', 'utf-8'))
 # dir3は年！
 dir1 = os.listdir("content/")
 dir1.remove("authors")
+dir1.remove("other")
 for dir2 in dir1:
     lg_title = '\
     <div class="row" id="'+dir2+'">\
