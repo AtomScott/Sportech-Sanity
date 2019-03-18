@@ -1,10 +1,11 @@
 ---
 title: "Decomposing	the	Immeasurable Sport:
-A deep learning	expected possession	value framework	
+A deep learning	expected possession	value framework
 for soccer"
+photo: "eq1.jpeg"
 info:
   title: "Decomposing the Immeasurable Sport:
-	A deep learning	expected possession	value framework	
+	A deep learning	expected possession	value framework
 	for soccer"
   authors: "Javier Fernández, Luke Bornn, Dan Cervone"
   labs: "F.C. Barcelona, Simon Fraser University, Los Angeles Dodgers"
@@ -58,7 +59,7 @@ draft: false
 ポゼッションの期待値（EPV : Expected Possession Value）は
 目的地に応じたパスとドリブルの期待値モデルとゴール期待値モデルを統合した
 以下の式で定義される。
-![](eq1.png)
+![](eq1.jpeg)
 
 - **パスとドリブルの期待値モデル**:  
 著者が[SSAC2018で発表した論文](http://www.lukebornn.com/papers/fernandez_ssac_2018.pdf)で提案している統計モデルをCNNで拡張した確率モデルを採用
