@@ -6,7 +6,10 @@
       <ul>
         <!-- Ranges through content/posts/*.md -->
         {{ range .Site.Pages }}
-        <li> <a href="{{.Permalink}}">{{.Title}} <i class="fas fa-{{.Params.info.sport_icon}}"></i> </a> </li> {{ end }}
+        <li>
+          <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+        </li>
+        {{ end }}
       </ul>
     </div>
   </div>
