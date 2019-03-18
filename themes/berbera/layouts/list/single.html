@@ -1,17 +1,34 @@
 {{ define "title" }}{{ .Title | markdownify }}{{ end }} {{ define "main" }}
 <article>
-  <div class="page">
+  <div class="list">
     <div class="content">
       <h2>論文紹介一覧</h2>
-      <ul>
-        <!-- Ranges through content/posts/*.md -->
-        {{ range .Site.Pages }}
-        <li>
-          <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-        {{ end }}
-      </ul>
+      <!-- Ranges through content/posts/*.md -->
+      {{ range where .Site.Pages ".Params.info" "!=" nil}}
+      <p><span class="date">{{- range .Params.authors }}{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+          {{ .Params.name }}{{end}}
+          {{end}}|{{.Date.Format "2006-01-02"}}</span>
+      </p>
+      <p><a href="{{.Permalink}}">{{.Title}}<img class="preview" src="{{.Permalink}}{{.Params.photo}}"></img></a></p><br>
+      {{ end }}
     </div>
   </div>
 </article>
+<style>
+  .list p {
+    font-size: 0.8em;
+  }
+
+  .date {
+    color: #636363;
+  }
+
+  .preview {
+    object-fit: cover;
+    height: 80px;
+    margin-bottom: .5em;
+    clear: left;
+
+  }
+</style>
 {{ end }}
