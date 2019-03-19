@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sportech Sanity</title>
-    <link>https://atomscott.github.io/Sports-Lab/</link>
+    <link>https://atomscott.github.io/Sportech-Sanity/</link>
     <description>Recent content on Sportech Sanity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Mar 2019 00:00:00 +0900</lastBuildDate>
     
-	<atom:link href="https://atomscott.github.io/Sports-Lab/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://atomscott.github.io/Sportech-Sanity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Using Deep Learning to Understand Patterns of Player Movement in the NBA</title>
-      <link>https://atomscott.github.io/Sports-Lab/mit-ssac/2019/deep-learning-player-movement/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/deep-learning-player-movement/</link>
       <pubDate>Mon, 18 Mar 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/mit-ssac/2019/deep-learning-player-movement/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/deep-learning-player-movement/</guid>
       <description>要旨 Abstract 論文のアブストラクトを日本語で軽く Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32次元ベクトルで表現し、それらのユークリッドを距離を使うことがプレー類似度を示すために有効である。 この発見により、Similar Possessions Finder（類似ポゼッション検索器）を開発することができた。 Similar Possessions Finderによって、 - &amp;ldquo;How much more frequently did Andre Drummond establish position on the right block than on the left block during the 2015-2016 regular season?&amp;rdquo; などの検索に素早く答えを見るけることができるようになった。
 リサーチ課題 どうすれば、オフェンス時の自動でプレーを比較して、分析するフレームワークが作れるか。
 リサーチ課題に対する結論 トラッキングデータ使ったデータベースの作成
@@ -27,19 +27,19 @@
     
     <item>
       <title></title>
-      <link>https://atomscott.github.io/Sports-Lab/other/list/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/other/list/</link>
       <pubDate>Wed, 06 Mar 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/other/list/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/other/list/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data-Driven Ghosting using Deep Imitation Learning</title>
-      <link>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2017/data-driven-ghosting/</link>
       <pubDate>Wed, 20 Feb 2019 11:53:49 -0700</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2017/data-driven-ghosting/</guid>
       <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
 ゴール期待値などといった現在のSoTAである測定値は、パフォーマンス分析において頻繁に使われるようになった。しかし、シュートという離散的なイベントに紐付けられているため、本質的な制約がある。
 選手・ボールのトラッキングデータを用いることで、細かな行動パターンを定量的に分析することができるのではないか。
@@ -59,10 +59,10 @@
     
     <item>
       <title>Decomposing	the	Immeasurable Sport: A deep learning	expected possession	value framework for soccer</title>
-      <link>https://atomscott.github.io/Sports-Lab/mit-ssac/2019/decomposing_the_immeasurable_sport/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/decomposing_the_immeasurable_sport/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/mit-ssac/2019/decomposing_the_immeasurable_sport/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/decomposing_the_immeasurable_sport/</guid>
       <description>要旨 Abstract サッカーというスポーツが持つ複雑な側面の詳細な、 そして柔軟な解釈を提供するために、 コーチが興味を持つ幅広いイベントを要約する 分析手法が求められている。 そこで、本論文では深層学習を用いたポゼッションの期待値 （EPV : Expected Possession Value）推定 フレームワークを提案する。
 このフレームワークを活用することで、 試合中の文脈におけるパスやドリブルといった イベントの貢献を推定するだけでなく、 その他の選択肢の提案など 様々な分析を行うことができる。
 リサーチ課題 サッカーというスポーツが持つ 各イベントや各選手間の相互作用生を 柔軟に表現すること
@@ -84,10 +84,10 @@
     
     <item>
       <title>Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features</title>
-      <link>https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/icice/2019/gait_recognition_based/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/icice/2019/gait_recognition_based/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/icice/2019/gait_recognition_based/</guid>
       <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
 歩行認証は、カメラから離れた場所からでも動作を測定可能であるため、認識対象の協力を必要とせず識別を実行できる。 そのため、歩容認証に基づくシステムは、街中の監視や犯罪捜査など実問題に対して有効に機能することが期待されている。
 従来の歩容認証手法の多くは、歩行シーケンスを集約したGEIと呼ばれる特徴量を利用している。 これに対し、相互部分空間法（MSM）に基づく手法では、歩行シーケンスの構造情報をコンパクトかつ高精度に表現可能であることが知られている。
@@ -109,10 +109,10 @@
     
     <item>
       <title>Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval</title>
-      <link>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</link>
+      <link>https://atomscott.github.io/Sportech-Sanity/more/201x/chalkboarding/</link>
       <pubDate>Mon, 20 Feb 2017 11:53:49 -0700</pubDate>
       
-      <guid>https://atomscott.github.io/Sports-Lab/more/201x/chalkboarding/</guid>
+      <guid>https://atomscott.github.io/Sportech-Sanity/more/201x/chalkboarding/</guid>
       <description>要旨 Abstract 急増するスポーツのトラッキングデータによって、１プレーのデータを効率よく処理することに注目が集まってきている。タグ付けされたデータを素早く検索するシステムはあるが、タグ付けされていないプレーを検索するシステムは未だない。 本文ではChalkboardingと呼ぶ、検索システムを提案する。
 Apple風にまとめるなら、&amp;ldquo;試合中の気になったシーンを入力すれば、過去の試合から類似したプレイを検索することができます。Chalkboardingならタグなしのトラッキングデータのみでね。&amp;rdquo;
 リサーチ課題 スポーツにおけるワンプレーのような、マルチエージェントの時空間軌跡に対するクエリを表現する最良の方法はなにか
