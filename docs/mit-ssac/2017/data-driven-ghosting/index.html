@@ -20,8 +20,8 @@
 <meta property="og:description" content="Summary" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/" />
-<meta property="article:published_time" content="2017-02-20T11:53:49-07:00"/>
-<meta property="article:modified_time" content="2017-02-20T11:53:49-07:00"/>
+<meta property="article:published_time" content="2019-02-20T11:53:49-07:00"/>
+<meta property="article:modified_time" content="2019-02-20T11:53:49-07:00"/>
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Data-Driven Ghosting using Deep Imitation Learning"/>
@@ -35,9 +35,9 @@
   "@type": "BlogPosting",
   "headline": "Data-Driven Ghosting using Deep Imitation Learning",
   "url": "https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/",
-  "wordCount": "26",
-  "datePublished": "2017-02-20T11:53:49-07:00",
-  "dateModified": "2017-02-20T11:53:49-07:00",
+  "wordCount": "32",
+  "datePublished": "2019-02-20T11:53:49-07:00",
+  "dateModified": "2019-02-20T11:53:49-07:00",
   "author": {
     "@type": "Person",
     "name": ""
@@ -133,12 +133,12 @@ MathJax.Hub.Config({
   <meta name="twitter:site" content="@publisher_handle">
   <meta name="twitter:title" content="Data-Driven Ghosting using Deep Imitation Learning">
   <meta name="twitter:description" content="閲覧性・集約性の高いスポーツデータまとめレポジトリ">
-  <meta name="twitter:image" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/">
+  <meta name="twitter:image" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/fig1.png">
 
   
   <meta property="og:title" content="Data-Driven Ghosting using Deep Imitation Learning" />
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/" />
+  <meta property="og:image" content="https://atomscott.github.io/Sports-Lab/mit-ssac/2017/data-driven-ghosting/fig1.png" />
   <meta property="og:site_name" content="Sportech Sanity" />
 
 
@@ -156,9 +156,9 @@ MathJax.Hub.Config({
 
     <h1 class="technical_note_title">Data-Driven Ghosting using Deep Imitation Learning</h1>
     <div class="technical_note_date">
-      <time datetime=" 2017-02-20T11:53:49-07:00 "> 20 Feb 2017</time>
+      <time datetime=" 2019-02-20T11:53:49-07:00 "> 20 Feb 2019</time>
     </div>
-    <img class="img-responsive" src=""/>
+    <img class="img-responsive" src="fig1.png"/>
   </header>
   <p>作成者 : <a href="https://atomscott.github.io/Sports-Lab/authors/atom-scott/"><span class="author-name text-primary">Atom Scott</span>     </a>
       <a href="https://twitter.com/AtomJamesScott" class="author-social-link twitter small" target="_blank">
@@ -224,6 +224,12 @@ Tweetする</a>
 
 <p>このゴースティング手法を活用することで、「ある選手・チームはある試合状況において、どのように動くべきなのか」という問いに答えることができる。さらに異なるチームがある状況に対してどうアプローチしたかも予想することができる。</p>
 
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/WI-WL2cj0CA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
 <h2 id="リサーチ課題">リサーチ課題</h2>
 
 <p>きめ細かく守備をスケーラブルに定量化し，分析するにはどうすればよいか？</p>
@@ -243,20 +249,25 @@ Tweetする</a>
 <p><strong>手法の具体的な説明</strong></p>
 
 <ul>
-<li><p>深層模倣学習</p></li>
-
-<li><p>ゴースティング</p></li>
+<li>深層模倣学習</li>
 </ul>
 
-<p><strong>従来のアプローチとはどのように異なるか</strong></p>
+<p>役割別で単一選手のモデルを学習してから、全役割で複数選手のモデルを学習する。
+モデルはLSTMを使う。</p>
+
+<p><img src="fig9.png" alt="" />
+<img src="fig10.png" alt="" /></p>
 
 <h2 id="結果">結果</h2>
 
-<p>ゴーストの動きがゴール確率を低下させる特定の状況を示した。</p>
+<p>ゴーストの動きがゴール確率を低下させる特定の状況を示すことができた。
+また、リーグ全体のデータを学習したゴーストと、特定のチームのデータのみで学習したゴーストを比較することで異なる動きをするゴーストができるので比較が可能になった。
+<img src="fig1.png" alt="" /></p>
 
 <h2 id="コメント">コメント</h2>
 
-<p><em>問題点や議論できることがあれば</em></p>
+<p><em>問題点や議論できることがあれば</em>
+{{ &lt; youtube 130r0XQIKq0 &gt;}}</p>
 
 <h2 id="その他">その他</h2>
 
