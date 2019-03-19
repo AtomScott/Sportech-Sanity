@@ -1,5 +1,6 @@
 ---
 title: "Using Deep Learning to Understand Patterns of Player Movement in the NBA"
+photo: fig3.png
 info:
   title: "Using	Deep	Learning	to	Understand	Patterns	of	Player Movement	in	the	NBA"
   authors: "Akhil	Nistala,	John	Guttag"
@@ -38,21 +39,21 @@ Similar	Possessions Finderによって、
 自動で類似プレーを検索する方法
 1. 選手のトラッキングデータを画像に変換
 2. Autoencoderにより次元圧縮した画像を生成
-!()[fig3.png]
+![](fig3.png)
 3. 次元圧縮した画像のユークリッド距離を用いて、近傍する画像を検索する
 
 選手のプレースタイルを分析する方法
 1. 次元圧縮した画像をクラスタリングする
 2. クラスタの中心となる画像を見て、クラスタを特徴づける
-!()[fig6.png]
+![](fig6.png)
 3. クラスタ内にある画像の比率を比較して、プレースタイルを分析する
-!()[fig11.png]
-!()[fig10.png]
+![](fig11.png)
+![](fig10.png)
 
 
 ## 結果
 画像検索の精度は著者による10段階評価のようであるので、定量的な評価ができていない。
-!()[fig4.png]
+![](fig4.png)
 
 ## コメント
 *問題点や議論できることがあれば*
