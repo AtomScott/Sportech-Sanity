@@ -21,10 +21,8 @@
       Sports Laboではこの課題を解消するため，閲覧性・集約性の高いスポーツデータまとめレポジトリを立ち上げました．
   </div>
 </div>
-<script>
-document.getElementsByName('twitter:title').content = 'Sportech Sanity';
-document.getElementsByName('twitter:image').content = '{{ .Permalink }}/images/home.png';
-</script>
+<meta name="twitter:title" content="Sportech Sanity">
+<meta name="twitter:image" content="{{ .Permalink }}images/home.png">
 
     <div class="row" id="ieee">    <div class="col-sm-12">    <h3 class="category_header">IEEE</h3>    </div>    </div>    
         <div class="row">        <div class="col-sm-12">        <div class="card">        <h4 class="card-header">2018</h4>        <div class="card-body">        <ul>        {{ range (where .Pages "File.Dir" "in" "/ieee/2018/").Reverse }}        <li>        <a href="{{.Permalink}}">{{.Title}} <i class="fas fa-{{.Params.info.sport_icon}}"></i> </a>        </li>        {{ end }}        </ul>         </div>        </div>        </div>        </div>        
