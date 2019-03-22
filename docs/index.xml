@@ -17,7 +17,8 @@
       <pubDate>Mon, 18 Mar 2019 00:00:00 +0900</pubDate>
       
       <guid>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/deep-learning-player-movement/</guid>
-      <description>要旨 Abstract 論文のアブストラクトを日本語で軽く Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32次元ベクトルで表現し、それらのユークリッドを距離を使うことがプレー類似度を示すために有効である。 この発見により、Similar Possessions Finder（類似ポゼッション検索器）を開発することができた。 Similar Possessions Finderによって、 - &amp;ldquo;How much more frequently did Andre Drummond establish position on the right block than on the left block during the 2015-2016 regular season?&amp;rdquo; などの検索に素早く答えを見るけることができるようになった。
+      <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
+Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32次元ベクトルで表現し、それらのユークリッドを距離を使うことがプレー類似度を示すために有効である。 この発見により、Similar Possessions Finder（類似ポゼッション検索器）を開発することができた。 Similar Possessions Finderによって、 - &amp;ldquo;How much more frequently did Andre Drummond establish position on the right block than on the left block during the 2015-2016 regular season?&amp;rdquo; などの検索に素早く答えを見るけることができるようになった。
 リサーチ課題 どうすれば、オフェンス時の自動でプレーを比較して、分析するフレームワークが作れるか。
 リサーチ課題に対する結論 トラッキングデータ使ったデータベースの作成
 →NLP的な要素はなかったので、上記の&amp;rdquo;How much more frequently did Andre Drummond establish position on the right block than on the left block during the 2015-2016 regular season?&amp;ldquo;の質問はなんらかの形に変えて、検索しているだろうと考えている。
@@ -52,8 +53,7 @@
 深層模倣学習とゴースティング
 手法の具体的な説明
  深層模倣学習  役割別で単一選手のモデルを学習してから、全役割で複数選手のモデルを学習する。 モデルはLSTMを使う。
-結果 ゴーストの動きがゴール確率を低下させる特定の状況を示すことができた。 また、リーグ全体のデータを学習したゴーストと、特定のチームのデータのみで学習したゴーストを比較することで異なる動きをするゴーストができるので比較が可能になった。 コメント 問題点や議論できることがあれば {{ &amp;lt; youtube 130r0XQIKq0 &amp;gt;}}
-その他 リサーチクエスチョンに関する論文
+結果 ゴーストの動きがゴール確率を低下させる特定の状況を示すことができた。 また、リーグ全体のデータを学習したゴーストと、特定のチームのデータのみで学習したゴーストを比較することで異なる動きをするゴーストができるので比較が可能になった。 コメント 問題点や議論できることがあれば   その他 リサーチクエスチョンに関する論文
 手法に関する論文</description>
     </item>
     

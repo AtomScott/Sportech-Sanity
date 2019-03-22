@@ -19,6 +19,7 @@ draft: false
 
 ## 要旨 Abstract
 *論文のアブストラクトを日本語で軽く*
+
 Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32次元ベクトルで表現し、それらのユークリッドを距離を使うことがプレー類似度を示すために有効である。
 この発見により、Similar	Possessions Finder（類似ポゼッション検索器）を開発することができた。
 Similar	Possessions Finderによって、
@@ -57,7 +58,9 @@ Similar	Possessions Finderによって、
 
 ## コメント
 *問題点や議論できることがあれば*
+
 {{< youtube DNWWi8RYzhM >}}
+
 軌道画像をそのまま使うのは計算リソース的に厳しかったために、Autoencoderによる次元圧縮を行ったそうなのだが、トラッキングデータを画像にする必要はあるのか。
 （検証したい気持ちがある）
 
@@ -65,5 +68,7 @@ Similar	Possessions Finderによって、
 
 ## その他
 **リサーチクエスチョンに関する論文**
+
 (Chalkboarding: A New Spatiotemporal Query Paradigm for Sports Play Retrieval)[https://atomscott.github.io/Sports-Lab/other/201x/chalkboarding/]
+
 **手法に関する論文**
