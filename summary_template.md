@@ -1,5 +1,6 @@
 ---
 title: ""
+photo: ""
 info:
   title: ""
   authors: ""
