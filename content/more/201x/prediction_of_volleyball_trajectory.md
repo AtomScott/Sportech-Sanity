@@ -60,7 +60,7 @@ kinectとOpenposeより得られた2種類の関節データを使って計算�
 ![Screenshot from 2019-03-22 13-36-34](https://user-images.githubusercontent.com/22371492/54800973-ed89ef00-4ca7-11e9-9997-c0ce8b4de1f6.png)
 
 
-{{ < youtube tqnvM2L86-I > }}
+{{< youtube tqnvM2L86-I >}}
 
 ## コメント
 *問題点や議論できることがあれば*
