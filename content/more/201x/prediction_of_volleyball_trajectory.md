@@ -14,7 +14,7 @@ authors:
 date: 2019-03-022T00:00:00+09:00
 description: "Summary"
 type: technical_note
-draft: true
+draft: false
 ---
 
 ## 要旨 Abstract
