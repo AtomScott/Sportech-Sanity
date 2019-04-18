@@ -15,13 +15,13 @@
 <h2>紹介した論文</h2>
 <!-- Ranges through content/* and info!=nil.md -->
 {{ range .Data.Pages }}
-<div class='row'>
+<div class='row summary-block'>
   <div class='col-2'>
-    <p><a href="{{.Permalink}}"><img class="preview" src="{{.Permalink}}{{.Params.photo}}"></img></a></p>
+    <p><a href="{{.Permalink}}"><img class="summary-img preview" src="{{.Permalink}}{{.Params.photo}}"></img></a></p>
 
   </div>
   <div class='col-10'>
-    <p><a href="{{.Permalink}}">{{.Title}}</a><br><span class="date">{{- range .Params.authors }}{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+    <p class='summary-title'><a href="{{.Permalink}}">{{.Title}}</a><br><span class="date">{{- range .Params.authors }}{{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
         {{ .Params.name }}{{end}}
         {{end}}|{{.Date.Format "2006-01-02"}}</span>
     </p>
