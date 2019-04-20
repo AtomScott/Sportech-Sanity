@@ -3,7 +3,10 @@ Date: 2019-03-01
 Modified: 2010-12-05 19:30
 Category: projects
 Tags: 
-Slug: 
+Slug:
+img: https://github.com/AtomScott/Sportech-Sanity/blob/master/img.jpg?raw=true 
+link: https://github.com/AtomScott/Sportech-Sanity
+
 Authors: Atom Scott, Saeru Yamamoto, Gota Shirato and many more contributors
 Summary:  
 
