@@ -13,6 +13,24 @@
     
     <item>
       <title>Co-Evolving Soccer Softbot Team Coordination with Genetic Programming</title>
+      <link>https://atomscott.github.io/Sportech-Sanity/more/201x/co-evolving-soccer-softbot-team-coordination-with-genetic-programming/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://atomscott.github.io/Sportech-Sanity/more/201x/co-evolving-soccer-softbot-team-coordination-with-genetic-programming/</guid>
+      <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
+この論文ではロボカップサッカーにおける，遺伝的プログラミングを用いたチーム戦術の獲得方法について記されている． 最終的には遺伝的プログラミングにより，共同プレーを学習させることができた．
+リサーチ課題 進化計算によってサッカーエージェントは簡単な共同プレーをできるようになるのか．
+リサーチ課題に対する結論 サッカーエージェントはピッチ上で分散して，パス・ドリブル・ゴールを守るなど様々なプレーを獲得する様子が見られた．
+手法 まずは一言で 遺伝的プログラミング（GP）
+手法の具体的な説明 遺伝的プログラミングとは遺伝的アルゴリズムの種類の1つであり，進化を用いてプログラムやアルゴリズムを最適化させてあるタスクを達成させることを目標にしている．
+以下のような手順を追いながら，ある方法で評価をしたあとに，決められた割合で選択・変異・交配によって次の世代のエージェントをつくるということを繰り返します． 例えば，交配や変異によって，部分木はこのように変わっていきます． 従来のアプローチとはどのように異なるか ロボカップサッカーサーバーのモデルのダイナミック性を考慮して，相手の行動に応じて動くルールベースの手法が取られることが多い（当時は特に）．
+しかし，行動の種類が多いサッカーのような競技ではすべての行動・ルールを手でコーディングすることは不可能であるため，それらを学習する遺伝的プログラミングのようなアプローチは魅力的である．
+また，本文ではニューラルネットワークに関して
+ Most learning Strategies (neural networks, decision trees, etc.) are designed not to develop algorithmic behaviours but to learn a nonlinear function over a discrete set of variables. These strategies are effective for learning low-level soccer -player functions such as ball interception, etc., but may not be as well suited for learning emergent, high-level player coordination.</description>
+    </item>
+    
+    <item>
+      <title>Co-Evolving Soccer Softbot Team Coordination with Genetic Programming</title>
       <link>https://atomscott.github.io/Sportech-Sanity/other/co-evolving-soccer-softbot-team-coordination-with-genetic-programming/</link>
       <pubDate>Wed, 24 Apr 2019 00:00:00 +0900</pubDate>
       
