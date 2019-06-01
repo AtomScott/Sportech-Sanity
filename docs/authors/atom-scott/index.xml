@@ -85,6 +85,38 @@ Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32
     </item>
     
     <item>
+      <title>Evolving Neural Network Controllers for a Team of Self-Organizing Robots</title>
+      <link>https://atomscott.github.io/Sportech-Sanity/more/201x/evolving-neural-network-controllers-for-a-team-of-self-organizing-robots/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://atomscott.github.io/Sportech-Sanity/more/201x/evolving-neural-network-controllers-for-a-team-of-self-organizing-robots/</guid>
+      <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
+協調性のあるロボットのチームを成長させるGAとNNを混合させた手法を提案． その手法のケーススタディとしてロボカップサッカーに似たシミュレーションツールを用いる．
+{{ &amp;lt; youtube cP035M_w82s &amp;gt; }}
+リサーチ課題 ２Dの自律型ロボットにどうサッカーを教えるか
+リサーチ課題に対する結論 ニューラルネットワークコントローラーの重みやバイアスを進化アルゴリズムで更新すると，数百世代で自律型ロボットはサッカーらしい動きを見せるようになった．
+手法 まずは一言で
+ガイダンス付きの進化アルゴリズムでエージェントを動かすニューラルネットワークを成長させる．
+手法の具体的な説明
+Back Propが使えないFully Connected ANN と記載があったので，Boltzaman Machine ？と上記に書きましたが，正確には分かりません．
+Back Propが使えないからEAを使うといいつつ，どのようなEAを使ったかは明確な説明がないのでわからない． ※Genetic Evolution of a Neural Network for the Autonomous Control of a Four-Wheeled RobotのEAを基にしたとは書いてある．
+ シミュレーター  ロボカップサッカーのシミュレーターと似ているが，いくかの相違点がある．
+本研究で用いたシミュレーターでは，審判とゴールキーパーはいなく，ピッチの周りに仮想の境界が設定されているためボールは外に出ない．
+さらに，リアルタイムで実行されるロボカップサッカーのシミュレーターとは違い，本研究のものは計算パワーを最大限に活かすことが可能である．
+選手はボールに向かって，定められた加速度で動くことができ，ボールに十分近づけば蹴る動作も可能になる．
+1試合のシミュレーションは300ステップ・約60秒要する．
+ FREVO  FREVOは本研究の進化デザインを行うために，筆者らが以前開発をしたオープンソースのフレームワークである．
+従来のアプローチとはどのように異なるか
+本研究ではBack Propができないニューラルネットワークを活用している．
+これは，サッカーのように報酬が遅延して与えられることを考慮して判断したそうだ．
+結果 ６つの隠れニューロンを持ったFully Connected なネットワーク＆直行座標系の入出力（直行・曲座標系の入出力の比較実験も行っている）を活用したロボットを400世代以上まで進化させることで一番良いパフォーマンス（ほかのモデルと戦わせて勝敗を見たときに）を得ることができた．
+コメント 問題点や議論できることがあれば
+本研究ではBack Propができないニューラルネットワークのほうが，MLPよりも結果的によかったとしている．しかし，MLPをEAでパラメータを更新しても，うーんっていう感じはする．
+その他 リサーチクエスチョンに関する論文
+手法に関する論文</description>
+    </item>
+    
+    <item>
       <title>Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features</title>
       <link>https://atomscott.github.io/Sportech-Sanity/icice/2019/gait_recognition_based/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>

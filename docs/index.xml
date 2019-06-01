@@ -119,6 +119,38 @@ Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32
     </item>
     
     <item>
+      <title>Evolving Neural Network Controllers for a Team of Self-Organizing Robots</title>
+      <link>https://atomscott.github.io/Sportech-Sanity/more/201x/evolving-neural-network-controllers-for-a-team-of-self-organizing-robots/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://atomscott.github.io/Sportech-Sanity/more/201x/evolving-neural-network-controllers-for-a-team-of-self-organizing-robots/</guid>
+      <description>要旨 Abstract 論文のアブストラクトを日本語で軽く
+協調性のあるロボットのチームを成長させるGAとNNを混合させた手法を提案． その手法のケーススタディとしてロボカップサッカーに似たシミュレーションツールを用いる．
+{{ &amp;lt; youtube cP035M_w82s &amp;gt; }}
+リサーチ課題 ２Dの自律型ロボットにどうサッカーを教えるか
+リサーチ課題に対する結論 ニューラルネットワークコントローラーの重みやバイアスを進化アルゴリズムで更新すると，数百世代で自律型ロボットはサッカーらしい動きを見せるようになった．
+手法 まずは一言で
+ガイダンス付きの進化アルゴリズムでエージェントを動かすニューラルネットワークを成長させる．
+手法の具体的な説明
+Back Propが使えないFully Connected ANN と記載があったので，Boltzaman Machine ？と上記に書きましたが，正確には分かりません．
+Back Propが使えないからEAを使うといいつつ，どのようなEAを使ったかは明確な説明がないのでわからない． ※Genetic Evolution of a Neural Network for the Autonomous Control of a Four-Wheeled RobotのEAを基にしたとは書いてある．
+ シミュレーター  ロボカップサッカーのシミュレーターと似ているが，いくかの相違点がある．
+本研究で用いたシミュレーターでは，審判とゴールキーパーはいなく，ピッチの周りに仮想の境界が設定されているためボールは外に出ない．
+さらに，リアルタイムで実行されるロボカップサッカーのシミュレーターとは違い，本研究のものは計算パワーを最大限に活かすことが可能である．
+選手はボールに向かって，定められた加速度で動くことができ，ボールに十分近づけば蹴る動作も可能になる．
+1試合のシミュレーションは300ステップ・約60秒要する．
+ FREVO  FREVOは本研究の進化デザインを行うために，筆者らが以前開発をしたオープンソースのフレームワークである．
+従来のアプローチとはどのように異なるか
+本研究ではBack Propができないニューラルネットワークを活用している．
+これは，サッカーのように報酬が遅延して与えられることを考慮して判断したそうだ．
+結果 ６つの隠れニューロンを持ったFully Connected なネットワーク＆直行座標系の入出力（直行・曲座標系の入出力の比較実験も行っている）を活用したロボットを400世代以上まで進化させることで一番良いパフォーマンス（ほかのモデルと戦わせて勝敗を見たときに）を得ることができた．
+コメント 問題点や議論できることがあれば
+本研究ではBack Propができないニューラルネットワークのほうが，MLPよりも結果的によかったとしている．しかし，MLPをEAでパラメータを更新しても，うーんっていう感じはする．
+その他 リサーチクエスチョンに関する論文
+手法に関する論文</description>
+    </item>
+    
+    <item>
       <title>Gait Recognition Based on Constraint Mutual Subspace Method with CNN Features</title>
       <link>https://atomscott.github.io/Sportech-Sanity/icice/2019/gait_recognition_based/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
@@ -139,6 +171,59 @@ Trajectory embedding と呼ばれる、オフェンス時の選手の動きを32
  Gait energy image  Gait Energy Image(GEI) は，1 つの歩行シーケンスを集約することで得られる特徴量である。 シーケンスを平均化して集約することで，各フレームに含まれるノイズを抑制している。
 しかし，このようなシーケンスの集約は，フレーム間の変化の方向及び大きさまでは捉えられない．つまり，GEI はシーケンスの構造を圧縮しすぎるために，高精度な識別のために重要な構造情報までを損失してしまっている。  相互部分空間（MSM）  MSMは画像セットに基づく識別手法であり、歩行シルエットシーケンス全体の構造を部分空間によってコンパクトに表現する。 比較は、部分空間同士の類似度（正準角）を計算することで求まる。 結果 OU-ISIR Large Population Databaseを用いた1000人規模の評価実験において、98.%の精度を示した。 コメント 問題点や議論できることがあれば
 スポーツの画像認識タスクにおいて、選手間の識別というものが一つの問題となっている。 そのため、本文のように大規模人数の歩容認識手法は大きく役立つことが期待される。
+その他 リサーチクエスチョンに関する論文
+手法に関する論文</description>
+    </item>
+    
+    <item>
+      <title>Going Inside the Inner Game: Predicting the Emotions of Professional Tennis Players from Match Broadcasts</title>
+      <link>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/going-inside-the-inner-game/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://atomscott.github.io/Sportech-Sanity/mit-ssac/2019/going-inside-the-inner-game/</guid>
+      <description>要旨 Abstract テニスというスポーツは、 試合時間の80%が準備時間であると言われており、 &amp;ldquo;テニスはメンタルの試合だ&amp;rdquo;とよく言われる。
+また、他のポピュラーなスポーツでも &amp;ldquo;メンタル&amp;rdquo;をトレーニングの対象とすることも 増えている中、本論文では 全豪オープンの試合映像から選手の感情を 推定するフレームワークを提案する。
+具体的には、 試合映像から選手の表情を検出し、 その各種画像特徴を いくつかの機械学習アルゴリズムで学習することで 選手の感情を予測する。
+リサーチ課題 テニスというスポーツが持つ &amp;ldquo;メンタル&amp;rdquo;という重要な側面を 試合映像のみから定量化する。
+リサーチ課題に対する結論 テニス全豪オープンの試合映像から 選手の感情を予測し、かつ その定量的な指標と試合結果の 関係性が考察された。
+手法 まずは一言で
+試合映像からOpenFaceによってトリミングされた選手の表情から各種画像特徴を抽出し、 機械学習のさまざまなな手法で学習を行うことで、 選手の感情を推定する。
+手法の具体的な説明
+提案手法のフレームワークは以下のようになっており、 「特徴抽出」部と「感情予測」部に分けられる。
+ 特徴抽出:  OpenFaceが算出する表情に関する17の特徴（FAU）と、 その主要な特徴から予測される基本的な感情（FACS）を抽出する。
+ 感情予測:  特徴抽出部で抽出された2つの特徴を入力として 機械学習の様々な手法（SVM、判別分析、Neural Network、 Boosting、Bagging、正則化付き回帰モデル）で学習を行い、 分類精度が最良な手法を用いて予測を行う。
+従来のアプローチとはどのように異なるか
+結果 70%を訓練、残りの30%をテストデータとして学習と評価を行なったところ、 全体的にはSVMの予測精度が高いという結果になった。 また、全豪オープンのビッグ4のデータに対して予測された、 感情の割合を下に示す。
+各選手で感情の割合が異なり、 例えばナダルはよく&amp;rdquo;anxiety（心配）&amp;rdquo;だったことや、 フェデラーは逆に&amp;rdquo;focus（集中）&amp;rdquo;や&amp;rdquo;neutral（自然）&amp;rdquo; であったことを表情から予測されている。
+コメント 選手の「感情」は他のスポーツでも 共通している側面であるため、応用可能であるが 同時にその使い方にはまだ課題を残す。
+具体的には選手のメンタルは 非常にセンシティブな要素であるために、 解析結果のフィードバックは慎重に、そして 専門家が行う必要があるように思う。
+その他 リサーチクエスチョンに関する論文
+手法に関する論文</description>
+    </item>
+    
+    <item>
+      <title>Going Inside the Inner Game: Predicting the Emotions of Professional Tennis Players from Match Broadcasts</title>
+      <link>https://atomscott.github.io/Sportech-Sanity/more/201x//</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://atomscott.github.io/Sportech-Sanity/more/201x//</guid>
+      <description>要旨 Abstract テニスというスポーツは、 試合時間の80%が準備時間であると言われており、 &amp;ldquo;テニスはメンタルの試合だ&amp;rdquo;とよく言われる。
+また、他のポピュラーなスポーツでも &amp;ldquo;メンタル&amp;rdquo;をトレーニングの対象とすることも 増えている中、本論文では 全豪オープンの試合映像から選手の感情を 推定するフレームワークを提案する。
+具体的には、 試合映像から選手の表情を検出し、 その各種画像特徴を いくつかの機械学習アルゴリズムで学習することで 選手の感情を予測する。
+リサーチ課題 テニスというスポーツが持つ &amp;ldquo;メンタル&amp;rdquo;という重要な側面を 試合映像のみから定量化する。
+リサーチ課題に対する結論 テニス全豪オープンの試合映像から 選手の感情を予測し、かつ その定量的な指標と試合結果の 関係性が考察された。
+手法 まずは一言で
+試合映像からOpenFaceによってトリミングされた選手の表情から各種画像特徴を抽出し、 機械学習のさまざまなな手法で学習を行うことで、 選手の感情を推定する。
+手法の具体的な説明
+提案手法のフレームワークは以下のようになっており、 「特徴抽出」部と「感情予測」部に分けられる。
+ 特徴抽出:
+  OpenFaceが算出する表情に関する17の特徴（FAU）と、 その主要な特徴から予測される基本的な感情（FACS）を抽出する。
+ 感情予測:  特徴抽出部で抽出された2つの特徴を入力として 機械学習の様々な手法（SVM、判別分析、Neural Network、 Boosting、Bagging、正則化付き回帰モデル）で学習を行い、 分類精度が最良な手法を用いて予測を行う。
+従来のアプローチとはどのように異なるか
+結果 70%を訓練、残りの30%をテストデータとして学習と評価を行なったところ、 全体的にはSVMの予測精度が高いという結果になった。 また、全豪オープンのビッグ4のデータに対して予測された、 感情の割合を下に示す。
+各選手で感情の割合が異なり、 例えばナダルはよく&amp;rdquo;anxiety（心配）&amp;rdquo;だったことや、 フェデラーは逆に&amp;rdquo;focus（集中）&amp;rdquo;や&amp;rdquo;neutral（自然）&amp;rdquo; であったことを表情から予測されている。
+コメント 選手の「感情」は他のスポーツでも 共通している側面であるため、応用可能であるが 同時にその使い方にはまだ課題を残す。
+具体的には選手のメンタルは 非常にセンシティブな要素であるために、 解析結果のフィードバックは慎重に、そして 専門家が行う必要があるように思う。
 その他 リサーチクエスチョンに関する論文
 手法に関する論文</description>
     </item>
