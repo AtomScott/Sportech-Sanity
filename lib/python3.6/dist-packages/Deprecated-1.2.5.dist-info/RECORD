@@ -1,0 +1,12 @@
+Deprecated-1.2.5.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+Deprecated-1.2.5.dist-info/LICENSE.rst,sha256=HoPt0VvkGbXVveNy4yXlJ_9PmRX1SOfHUxS0H2aZ6Dw,1081
+Deprecated-1.2.5.dist-info/METADATA,sha256=ppYfTXYBgc25GQ7aEvJLBYbmFOn0qWvlnFucVnXM8uY,5040
+Deprecated-1.2.5.dist-info/RECORD,,
+Deprecated-1.2.5.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+Deprecated-1.2.5.dist-info/top_level.txt,sha256=nHbOYawKPQQE5lQl-toUB1JBRJjUyn_m_Mb8RVJ0RjA,11
+deprecated/__init__.py,sha256=Rq-FabCIy7q5t9eI8x0-lJclR44LsBzvdzlIG8b6Fp4,312
+deprecated/__pycache__/__init__.cpython-36.pyc,,
+deprecated/__pycache__/classic.cpython-36.pyc,,
+deprecated/__pycache__/sphinx.cpython-36.pyc,,
+deprecated/classic.py,sha256=7m0cymdmN9hT0LfzC9rJOXG3n8750dn7epLirYGMkyU,7891
+deprecated/sphinx.py,sha256=FEwwJ_X7OgtUMnjJ-VdrDL0kuV1Rlg7xrcqgmebAezg,7334

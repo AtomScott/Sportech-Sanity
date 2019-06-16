@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content_title %}{% if search %}Search "{{ search }}"{% else %}{% include 'title.html' %}{% endif %}{% endblock %}
+
+{% block content %}
+
+<!--検索結果の表示-->
+  {% if search %}
+    {% for entry in object_list %}
+      <div class="row">
+        <div class="col-2">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">
+            <img class="preview" src="{{entry.thumbnail}}"></a></p>
+        </div>
+        <div class="col-10">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">{{entry.title}}</a></a><br><span class="date">
+              <a class="publisher" href="{{entry.publisher_url}}">{{ entry.publisher }}</a>
+              |{{entry.timestamp}}</span><br>
+              <span class='labels'>
+                <a href='{{ url_for('index') }}?label={{entry.label1}}'>{{entry.label1}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label2}}'>{{entry.label2}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label3}}'>{{entry.label3}}</a>
+                </span>
+          </p>
+        </div>
+      </div>
+    {% else %}
+      <p>日本語のサーチ対応してないんっすよね。いまのところは英語のタイトル検索などにだったらいけます。</p>
+    {% endfor %}
+    
+<!--タグの表示-->
+  {% elif label %}
+      <div class="row">
+        <div class="col">
+        <p>検索中のラベル：　<a class="label"href="{{ url_for('index') }}"><span class="badge badge-danger">{{ label }}</span></a></p><br>
+        </div>
+      </div>
+      {% for entry in object_list if entry.label1 == label or entry.label2 == label or entry.label3 == label  %}
+      <div class="row">
+        <div class="col-2">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">
+            <img class="preview" src="{{entry.thumbnail}}"></a></p>
+        </div>
+        <div class="col-10">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">{{entry.title}}</a></a><br><span class="date">
+              <a class="publisher" href="{{entry.publisher_url}}">{{ entry.publisher }}</a>
+              |{{entry.timestamp}}</span><br>
+              <span class='labels'>
+                <a href='{{ url_for('index') }}?label={{entry.label1}}'>{{entry.label1}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label2}}'>{{entry.label2}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label3}}'>{{entry.label3}}</a>
+                </span>
+          </p>
+        </div>
+      </div>
+    {% else %}
+      <p>No entries have been created yet.</p>
+    {% endfor %}
+    
+  <!--通常の表示-->
+  {% else %}
+    {% for category in categories %}
+      <div class="row">    
+        <div class="col-sm-12">    
+          <h3 class="category_header">{{category}}</h3>    
+        </div>    
+      </div>
+      {% for entry in object_list if entry.sport == category %}
+      <div class="row">
+        <div class="col-2">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">
+            <img class="preview" src="{{entry.thumbnail}}"></a></p>
+        </div>
+        <div class="col-10">
+          <p><a href="{% if entry.published %}{{ url_for('detail', slug=entry.slug) }}{% else %}{{ url_for('edit', slug=entry.slug) }}{% endif %}">{{entry.title}}</a></a><br><span class="date">
+              <a class="publisher" href="{{entry.publisher_url}}">{{ entry.publisher }}</a>
+              |{{entry.timestamp}}</span><br>
+              <span class='labels'>
+                <a href='{{ url_for('index') }}?label={{entry.label1}}'>{{entry.label1}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label2}}'>{{entry.label2}}</a>
+                <a href='{{ url_for('index') }}?label={{entry.label3}}'>{{entry.label3}}</a>
+                </span>
+          </p>
+        </div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <p>No entries have been created yet.</p>
+    {% endfor %}
+
+  {% endif %}
+  {% include "includes/pagination.html" %}
+{% endblock %}
