@@ -33,14 +33,14 @@ DEBUG = False
 
 # The secret key is used internally by Flask to encrypt session data stored
 # in cookies. Make this unique for your app.
-SECRET_KEY = 'shhh, secret!'
+SECRET_KEY = 'secret!'
 
 # This is used by micawber, which will attempt to generate rich media
 # embedded objects with maxwidth=800.
 SITE_WIDTH = 800
 
 # Github Access Settings
-g = Github("7b6c9507d22fcde6483a2d8c1f2918a0fd0c056e")
+g = Github("---")
 repo = g.get_repo("AtomScott/Sportech-Sanity")
 label = repo.get_label("論文紹介")
 issues = repo.get_issues(state='open', labels=[label])
